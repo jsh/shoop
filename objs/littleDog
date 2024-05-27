@@ -1,0 +1,6 @@
+# a little dog
+
+bark() {
+    echo woof woof
+    echo woof woof
+}

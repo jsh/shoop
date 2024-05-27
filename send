@@ -1,0 +1,29 @@
+# send a message
+
+case $1 in
+    -d) msgtype=D
+        shift ;;
+    *) msgtype=C ;;
+esac
+
+T_NAME=$1
+shift
+
+T_DIR=/tmp/ipc/$T_NAME
+T_IN=$T_DIR/in
+T_OUT=$T_DIR/out
+USAGE="usage: $(basename $0) obj msg"
+abort() { # print and bail
+    echo $* 1>&2
+    exit 1
+}
+
+test $# -gt 0 || abort $USAGE
+
+test -d $T_DIR ||
+    abort $T_name: no such object
+
+echo -e $msgtype "$*" > $T_IN
+test $msgtype = "D" || cat $T_OUT
+
+exit 0

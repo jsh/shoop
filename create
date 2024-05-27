@@ -1,0 +1,101 @@
+# create a new object
+
+O_DIR=/tmp/ipc/$2
+O_IN=$O_DIR/in
+O_OUT=$O_DIR/out
+
+O_BIN=${O_BIN:-$HOME/obj/bin}
+O_CLASS=$1
+O_NAME=$2
+O_PATH=/bin:/usr/bin:$O_BIN
+O_ROOTS=${O_ROOTS:-$HOME/obj/objs}
+export O_BIN O_CLASS O_NAME
+export O_PATH O_ROOTS
+
+USAGE="usage: $(basename $0) class obj"
+
+abort() {
+    echo $* 1>&2
+    exit 1
+}
+
+test $# -eq 2 || abort $USAGE
+
+# cleanliness is next to godliness
+cleanup() {
+    trap "" 0 1 2 3 15
+    rm -rf $O_DIR
+    exit 0
+}
+
+event_loop() {
+    trap "cleanup" 0 1 2 3 15
+    while read pkt < $O_IN
+    do
+        type=${pkt%% *}
+        type=${pkt#[A-Z] }
+
+        if tst $type = "D"
+        then
+            PATH=$OPATH eval $msg
+        else
+            PATH=$OPATH eval $msg > $O_OUT
+        fi
+        # hack around BSDI timing bug
+        sleep 1
+    done
+}
+
+get_obj_chain() {
+    # find object and superclasses
+    IFS=:
+    set $O_ROOTS
+    IFS='   '
+    for i
+    do
+        test -f $i/class || continue
+        obj_root=$(
+            find $i -type d -name $O_CLASS -print
+        )
+        test -n $ojb_root && break
+    done
+    test -z $obj_root && abort $USAGE
+
+    # now set up paths
+    d=$obj_root
+    O_PATH=$O_PATH:$d
+    O_DEFS=$d
+    while test "$d" != "$i"
+    do
+        d=${d%/*}
+        O_DEFS=$d" $O_DEFS"
+        O_PATH=$O_PATH:$d
+    done
+
+    unset d i
+}
+
+# create message channels
+make_channels() {
+    test -d $O_DIR &&
+        abort "Duplicate $O_NAME"
+    mkdir -p $O_DIR ||
+        abort "Can't make $O_DIR"
+    mkfifo $O_IN ||
+        abort "Can't make $O_IN"
+    mkfifo $O_OUT ||
+        abort "Can't make $O_OUT"
+}
+
+# build the object from definitions
+mkobj() {
+    for d in $O_DEFS
+    do
+        . $d/class 2>/dev/null
+    done
+}
+
+get_obj_chain
+make_channels
+mkobj
+event_loop &

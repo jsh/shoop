@@ -1,0 +1,4 @@
+infect()
+{
+    send $1\"$(typeset -f infect | oneline)\"
+}

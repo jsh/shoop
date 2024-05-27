@@ -1,0 +1,8 @@
+# a BIG DOG
+
+bark() {
+    for i in 0 1 2 3 4
+    do
+        echo WOOF WOOF
+    done
+}

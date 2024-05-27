@@ -1,0 +1,14 @@
+# destroy a set of objects
+
+USAGE="destroy obj [obj ...]"
+abort() {
+    echo $* 1>&2
+    exit 1
+}
+
+test $# -ge 1 || abort "$USAGE"
+
+for i
+do
+    send $i destroy
+done

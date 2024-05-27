@@ -1,0 +1,72 @@
+# fundamental methods
+
+abort() { # print and bail
+    echo $* 1>&2
+    exit 1
+}
+
+class() {
+    echo $O_CLASS
+}
+
+debug() {
+    echo $O_NAME: $*
+}
+
+defs() {
+    for d in $O_DEFS
+    do
+        cat $d/class 2>/dev/null
+    done
+}
+
+_destroy() {
+    test $# -eq 0 && exit 0
+    test $0 = "self" && exit 0
+
+    for i
+    do
+        send -d $i destroy
+    done
+}
+
+destroy() {
+    _destroy $*
+}
+
+self() {
+    echo $O_NAME
+}
+
+
+# send a message
+
+case $1 in
+    -d) msgtype=D
+        shift ;;
+    *) msgtype=C ;;
+esac
+
+T_NAME=$1
+shift
+T_DIR=/tmp/ipc/$T_NAME
+T_IN=$T_DIR/in
+T_OUT=$T_DIR/out
+
+USAGE="usage: $(basename $0) obj msg"
+test $# -gt 0 || abort $USAGE
+
+if test "$T_NAME" = "$O_NAME" ||
+    test "$T_NAME" = "self"
+then
+    PATH=$O_PATH eval $*
+    return 0
+fi
+
+test -d $T_DIR ||
+    abort $T_name: no such object
+
+echo -e $msgtype "$*" > $T_IN
+test $msgtype = "D" || cat $T_OUT
+
+exit 0

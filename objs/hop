@@ -1,0 +1,12 @@
+# class hop
+
+hop() {
+    if test "$*" = "on pop"
+    then
+        echo -n "Stop!  "
+        echo "You must not hop on pop."
+    else
+        echo "hippety hop"
+    fi
+    return 0
+}

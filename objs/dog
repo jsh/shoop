@@ -1,0 +1,5 @@
+# dog: all bark, no bite
+
+bark() {
+    echo Unknown Dog Noise
+}

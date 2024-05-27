@@ -1,0 +1,16 @@
+# base animals methods
+
+name=$O_NAME
+food="Unknown food."
+setName() {
+    name=$*
+}
+getName() {
+    echo My name is: $name
+}
+setFood() {
+    food=$*
+}
+getFood() {
+    echo My favorite food is: $food
+}
