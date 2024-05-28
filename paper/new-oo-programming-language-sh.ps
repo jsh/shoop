@@ -1,0 +1,1407 @@
+%!PS-Adobe-3.0
+%%Creator: groff version 1.05
+%%DocumentNeededResources: font Times-Bold
+%%+ font Times-Italic
+%%+ font Times-Roman
+%%+ font Courier
+%%+ font Times-BoldItalic
+%%DocumentSuppliedResources: procset grops 1.05 0
+%%Pages: 13
+%%PageOrder: Ascend
+%%Orientation: Portrait
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset grops 1.05 0
+%!PS-Adobe-3.0 Resource-ProcSet
+
+/setpacking where {
+	pop
+	currentpacking
+	true setpacking
+} if
+
+/grops 120 dict dup begin 
+
+% The ASCII code of the space character.
+/SC 32 def
+
+/A /show load def
+/B { 0 SC 3 -1 roll widthshow } bind def
+/C { 0 exch ashow } bind def
+/D { 0 exch 0 SC 5 2 roll awidthshow } bind def
+/E { 0 rmoveto show } bind def
+/F { 0 rmoveto 0 SC 3 -1 roll widthshow } bind def
+/G { 0 rmoveto 0 exch ashow } bind def
+/H { 0 rmoveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+/I { 0 exch rmoveto show } bind def
+/J { 0 exch rmoveto 0 SC 3 -1 roll widthshow } bind def
+/K { 0 exch rmoveto 0 exch ashow } bind def
+/L { 0 exch rmoveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+/M { rmoveto show } bind def
+/N { rmoveto 0 SC 3 -1 roll widthshow } bind def
+/O { rmoveto 0 exch ashow } bind def
+/P { rmoveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+/Q { moveto show } bind def 
+/R { moveto 0 SC 3 -1 roll widthshow } bind def
+/S { moveto 0 exch ashow } bind def
+/T { moveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+
+% name size font SF -
+
+/SF {
+	findfont exch
+	[ exch dup 0 exch 0 exch neg 0 0 ] makefont
+	dup setfont
+	[ exch /setfont cvx ] cvx bind def
+} bind def
+
+% name a c d font MF -
+
+/MF {
+	findfont
+	[ 5 2 roll
+	0 3 1 roll % b
+	neg 0 0 ] makefont
+	dup setfont
+	[ exch /setfont cvx ] cvx bind def
+} bind def
+
+/level0 0 def
+/RES 0 def
+/PL 0 def
+/LS 0 def
+
+% BP -
+
+/BP {
+	/level0 save def
+	1 setlinecap
+	1 setlinejoin
+	72 RES div dup scale
+	LS {
+		90 rotate
+	} {
+		0 PL translate
+	} ifelse
+	1 -1 scale
+} bind def
+
+/EP {
+	level0 restore
+	showpage
+} bind def
+
+
+% centerx centery radius startangle endangle DA -
+
+/DA {
+	newpath arcn stroke
+} bind def
+
+% x y SN - x' y'
+% round a position to nearest (pixel + (.25,.25))
+
+/SN {
+	transform 
+	.25 sub exch .25 sub exch
+	round .25 add exch round .25 add exch
+	itransform
+} bind def
+	
+% endx endy startx starty DL -
+% we round the endpoints of the line, so that parallel horizontal
+% and vertical lines will appear even
+
+/DL {
+	SN
+	moveto
+	SN
+	lineto stroke
+} bind def
+
+% centerx centery radius DC -
+
+/DC {
+	newpath 0 360 arc closepath
+} bind def
+
+
+/TM matrix def
+
+%  width height centerx centery DE -
+
+/DE {
+	TM currentmatrix pop
+	translate scale newpath 0 0 .5 0 360 arc closepath
+	TM setmatrix
+} bind def
+
+% these are for splines
+
+/RC /rcurveto load def
+/RL /rlineto load def
+/ST /stroke load def
+/MT /moveto load def
+/CL /closepath load def
+
+% fill the last path
+
+% amount FL -
+
+/FL {
+	currentgray exch setgray fill setgray
+} bind def
+
+% fill with the ``current color''
+
+/BL /fill load def
+
+/LW /setlinewidth load def
+% new_font_name encoding_vector old_font_name RE -
+
+/RE {
+	findfont
+	dup maxlength dict begin
+	{
+		1 index /FID ne { def } { pop pop } ifelse
+	} forall
+	/Encoding exch def
+	dup /FontName exch def
+	currentdict end definefont pop
+} bind def
+
+/DEFS 0 def
+
+% hpos vpos EBEGIN -
+
+/EBEGIN {
+	moveto
+	DEFS begin
+} bind def
+
+/EEND /end load def
+
+/CNT 0 def
+/level1 0 def
+
+% llx lly newwid wid newht ht newllx newlly PBEGIN -
+
+/PBEGIN {
+	/level1 save def
+	translate
+	div 3 1 roll div exch scale
+	neg exch neg exch translate
+	% set the graphics state to default values
+	0 setgray
+	0 setlinecap
+	1 setlinewidth
+	0 setlinejoin
+	10 setmiterlimit
+	[] 0 setdash
+	/setstrokeadjust where {
+		pop
+		false setstrokeadjust
+	} if
+	/setoverprint where {
+		pop
+		false setoverprint
+	} if
+	newpath
+	/CNT countdictstack def
+	userdict begin
+	/showpage {} def
+} bind def
+
+/PEND {
+	clear
+	countdictstack CNT sub { end } repeat
+	level1 restore
+} bind def
+
+end def
+
+/setpacking where {
+	pop
+	setpacking
+} if
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Times-Bold
+%%IncludeResource: font Times-Italic
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Courier
+%%IncludeResource: font Times-BoldItalic
+grops begin/DEFS 1 dict def DEFS begin/u{.001 mul}bind def end/RES 72 def/PL
+792 def/LS false def/ENC0[/asciicircum/asciitilde/Scaron/Zcaron/scaron/zcaron
+/Ydieresis/trademark/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/space/exclam
+/quotedbl/numbersign/dollar/percent/ampersand/quoteright/parenleft/parenright
+/asterisk/plus/comma/hyphen/period/slash/zero/one/two/three/four/five/six/seven
+/eight/nine/colon/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J
+/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/circumflex
+/underscore/quoteleft/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z
+/braceleft/bar/braceright/tilde/.notdef/quotesinglbase/guillemotleft
+/guillemotright/bullet/florin/fraction/perthousand/dagger/daggerdbl/endash
+/emdash/ff/fi/fl/ffi/ffl/dotlessi/dotlessj/grave/hungarumlaut/dotaccent/breve
+/caron/ring/ogonek/quotedblleft/quotedblright/oe/lslash/quotedblbase/OE/Lslash
+/.notdef/exclamdown/cent/sterling/currency/yen/brokenbar/section/dieresis
+/copyright/ordfeminine/guilsinglleft/logicalnot/minus/registered/macron/degree
+/plusminus/twosuperior/threesuperior/acute/mu/paragraph/periodcentered/cedilla
+/onesuperior/ordmasculine/guilsinglright/onequarter/onehalf/threequarters
+/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth
+/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave
+/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex
+/atilde/adieresis/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave
+/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde
+/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn
+/ydieresis]def/Times-BoldItalic@0 ENC0/Times-BoldItalic RE/Courier@0 ENC0
+/Courier RE/Times-Roman@0 ENC0/Times-Roman RE/Times-Italic@0 ENC0/Times-Italic
+RE/Times-Bold@0 ENC0/Times-Bold RE
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 14/Times-Bold@0 SF 3.5(AN)149.62 165.6 S(ew Object-Oriented Pr)173.336
+165.6 Q(ogramming Language:)-.252 E/F1 14/Times-Italic@0 SF(sh)3.5 E/F2 12
+/Times-Italic@0 SF(Jeffr)263.07 189.6 Q(ey S. Haemer)-.444 E(Canary Softwar)
+253.224 201.6 Q(e, Inc.)-.444 E/F3 10/Times-Bold@0 SF(Abstract)161.395 264 Q/F4
+10/Times-Roman@0 SF 1.631(Many have frittered away their time on C++,)97 280.2
+R .715(while overlooking the new)72 292.2 R 3.215(,P)-.65 G/F5 8/Times-Roman@0
+SF(OSIX)191.7 292.2 Q F4 .716(.2-required, object-)B 2.838(oriented language:)
+72 304.2 R F3(sh.)5.338 E F4 2.837(As will be clear from the)7.838 F 1.289
+(enclosed code, the name may allude to the fact that)72 316.2 R .339
+(the author would be embarrassed to have anyone \214nd)72 328.2 R
+(out about it.)72 340.2 Q 2.892(This paper introduces a tiny)97 356.4 R 5.392
+(,o)-.65 G(bject-oriented)232.46 356.4 Q 5.413
+(programming system written entirely in P)72 368.4 R F5(OSIX)A F4(-)A
+(conforming shell scripts.)72 380.4 Q/F6 11/Times-Bold@0 SF 2.75(1. Overview)72
+410.4 R F4 .267(Object-oriented programming is currently all the rage)72 426.6
+R 8.428([King89]. Though)72 438.6 R 5.928(we normally use languages)8.428 F
+.968(designed speci\214cally for the task, they aren')72 450.6 R 3.469(ta)-.18
+G(lways)264.67 450.6 Q(necessary)72 462.6 Q 7.7(.H)-.65 G 2.7
+(ere, we illustrate this point by doing)127.64 462.6 R
+(object-oriented programming in the shell.)72 474.6 Q .544
+(In what follows, object classes are shell scripts)97 490.8 R 4.064
+(and objects are running processes.)72 502.8 R 4.063(Methods are)9.063 F 4.522
+(invoked by messages passed to objects through)72 514.8 R 1.654
+(FIFOs \(named pipes\).)72 526.8 R 1.653(The methods themselves are)6.653 F
+2.742(implemented as shell functions; function polymor)72 538.8 R(-)-.2 E .825
+(phism is guaranteed because separate programs have)72 550.8 R .905
+(separate name spaces.)72 562.8 R 3.406(Ac)5.906 G .906
+(lass hierarchy is provided)182.802 562.8 R(by the \214le system itself.)72
+574.8 Q 2.302(Sensible default actions are taken by objects)97 591 R 3.523
+(when they're sent messages for which they lack)72 603 R 1.375
+(explicitly de\214ned methods.)72 615 R 1.375(Debugging code can be)6.375 F
+.502(added to objects on the \215y)72 627 R 3.002(,t)-.65 G .502
+(hat is, after they've been)187.412 627 R(created.)72 639 Q .197
+(While the system is unconventional, only a toy)97 655.2 R(,)-.65 E .17
+(and downright slow)72 667.2 R 2.67(,i)-.65 G .17
+(ts implementation is straightfor)159.08 667.2 R(-)-.2 E 1.622
+(ward and its use instructive.)72 679.2 R 1.621(For example, \214gure 1)6.621 F
+2.407(shows an implementation of the examples used in)72 691.2 R 2.122
+(Roger Sessions' Summer)72 703.2 R 4.621(,')-.4 G 2.121(93 U)187.405 703.2 R F5
+(SENIX)A F4 2.121(Invited T)4.621 F(alk)-.7 E([Sessions93].)72 715.2 Q .107
+(Sessions' talk used application code size as one)349 264 R 2.862
+(measure of the advantages of object-oriented pro-)324 276 R 6.058
+(gramming. By)324 288 R 3.559(that measure, and with the same)6.058 F .372
+(examples, this system is better than C++.)324 300 R .372(In fact, the)5.372 F
+.65(core of the entire system, the two shell scripts)324 312 R/F7 10
+/Times-Italic@0 SF(cr)3.15 E(eate)-.37 E F4(and)324 324 Q F7(send)3.15 E F4
+3.149(,t)C .649(otal a little over 100 lines of code.)368.349 324 R .649
+(If you)5.649 F(don')324 336 Q 3.868<748c>-.18 G 1.369
+(nd your favorite OOP feature, it may not be)354.358 336 R
+(very hard to add it.)324 348 Q .4 LW 329 360 324 360 DL 330 360 325 360 DL 335
+360 330 360 DL 340 360 335 360 DL 345 360 340 360 DL 350 360 345 360 DL 355 360
+350 360 DL 360 360 355 360 DL 365 360 360 360 DL 370 360 365 360 DL 375 360 370
+360 DL 380 360 375 360 DL 385 360 380 360 DL 390 360 385 360 DL 395 360 390 360
+DL 400 360 395 360 DL 405 360 400 360 DL 410 360 405 360 DL 415 360 410 360 DL
+420 360 415 360 DL 425 360 420 360 DL 430 360 425 360 DL 435 360 430 360 DL 440
+360 435 360 DL 445 360 440 360 DL 450 360 445 360 DL 455 360 450 360 DL 460 360
+455 360 DL 465 360 460 360 DL 470 360 465 360 DL 475 360 470 360 DL 480 360 475
+360 DL 485 360 480 360 DL 490 360 485 360 DL 495 360 490 360 DL 500 360 495 360
+DL 505 360 500 360 DL 510 360 505 360 DL 515 360 510 360 DL 520 360 515 360 DL
+525 360 520 360 DL 530 360 525 360 DL 535 360 530 360 DL 540 360 535 360 DL/F8
+10/Courier@0 SF($)324 384 Q F7(cat animalia)6 E F8(new animal pooh bugs)324 396
+Q(send pooh setName Pooh Bear)324 420 Q(send pooh setFood Hunny)324 432 Q
+(send bugs setName Bugs Bunny)324 444 Q(send bugs setFood Carrots)324 456 Q
+(for i in pooh bugs)324 480 Q(do)324 492 Q(send $i getName)360 504 Q
+(send $i getFood)360 516 Q(done)324 528 Q(echo)324 552 Q(new dog Snoopy)324 576
+Q(new littleDog Toto)324 588 Q(new bigDog Lassie)324 600 Q
+(for i in Snoopy Toto Lassie)324 624 Q(do)324 636 Q(echo $i says)360 648 Q
+(send $i bark)360 660 Q(echo)360 672 Q(done)324 684 Q(destroy bugs pooh)324 708
+Q(destroy Snoopy Toto Lassie)324 720 Q EP
+%%Page: 2 2
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Courier@0 SF($)72 84 Q/F1 10/Times-Italic@0 SF(./animalia)6 E F0
+(My name is: Pooh Bear)72 96 Q(My favorite food is: Hunny)72 108 Q
+(My name is: Bugs Bunny)72 120 Q(My favorite food is: Carrots)72 132 Q
+(Snoopy says)72 156 Q(Unknown Dog Noise)72 168 Q(Toto says)72 192 Q(woof woof)
+72 204 Q(woof woof)72 216 Q(Lassie says)72 240 Q(WOOF WOOF)72 252 Q(WOOF WOOF)
+72 264 Q(WOOF WOOF)72 276 Q(WOOF WOOF)72 288 Q(WOOF WOOF)72 300 Q/F2 10
+/Times-Roman@0 SF(Figure 1.)140.835 324 Q(Animalia)5 E .4 LW 77 336 72 336 DL
+78 336 73 336 DL 83 336 78 336 DL 88 336 83 336 DL 93 336 88 336 DL 98 336 93
+336 DL 103 336 98 336 DL 108 336 103 336 DL 113 336 108 336 DL 118 336 113 336
+DL 123 336 118 336 DL 128 336 123 336 DL 133 336 128 336 DL 138 336 133 336 DL
+143 336 138 336 DL 148 336 143 336 DL 153 336 148 336 DL 158 336 153 336 DL 163
+336 158 336 DL 168 336 163 336 DL 173 336 168 336 DL 178 336 173 336 DL 183 336
+178 336 DL 188 336 183 336 DL 193 336 188 336 DL 198 336 193 336 DL 203 336 198
+336 DL 208 336 203 336 DL 213 336 208 336 DL 218 336 213 336 DL 223 336 218 336
+DL 228 336 223 336 DL 233 336 228 336 DL 238 336 233 336 DL 243 336 238 336 DL
+248 336 243 336 DL 253 336 248 336 DL 258 336 253 336 DL 263 336 258 336 DL 268
+336 263 336 DL 273 336 268 336 DL 278 336 273 336 DL 283 336 278 336 DL 288 336
+283 336 DL/F3 11/Times-Bold@0 SF 2.75(2. Design)72 378 R F2 2.318
+(As a foundation, we begin by reviewing the three)72 394.2 R 2.972
+(basic object-oriented features: encapsulation, func-)72 406.2 R 1.54
+(tion polymorphism, and inheritance.)72 418.2 R 1.54(These require-)6.54 F .43
+(ments, plus sloth \212 an eagerness to let U)72 430.2 R/F4 8/Times-Roman@0 SF
+(NIX)A F2 .431(and the)2.931 F 3.046
+(shell do as much of the job as possible \212 lead)72 442.2 R
+(directly to most major design decisions.)72 454.2 Q F4<83>77 470.4 Q F2
+(Encapsulation)97 470.4 Q 7.2(All object-oriented systems provide data)97 486.6
+R 3.706(abstraction and encapsulation; they let pro-)97 498.6 R 2.49
+(grammers create and operate on objects that)97 510.6 R 5.8(have user)97 522.6
+R 5.8(-de\214ned types, while hiding all)-.2 F 3.594
+(knowledge about how those operations and)97 534.6 R 4.264
+(types are implemented.)97 546.6 R 4.264(Programs are pre-)9.264 F 1.704
+(vented from manipulating an object')97 558.6 R 4.204(si)-.55 G(nternal)260.23
+558.6 Q .357(data structures except through the methods that)97 570.6 R
+(operate on those objects.)97 582.6 Q(U)97 598.8 Q F4(NIX)A F2 3.091
+(processes are attractive candidates for)5.59 F 4.978(objects. Each)97 610.8 R
+2.477(running, U)4.978 F F4(NIX)A F2 2.477(process has its)4.977 F .264
+(own name and address space; it')97 622.8 R 2.765(si)-.55 G .265(mpossible to)
+236.895 622.8 R .826(look at or tweak the insides of an already run-)97 634.8 R
+3.873(ning process unless the process is running)97 646.8 R(under a debugger)97
+658.8 Q(.)-.55 E F4<83>77 675 Q F2(Objects and the object-class hierarchy)97
+675 Q 3.31(Object-oriented programming systems try to)97 691.2 R .584
+(maximize code reuse by letting new data types)97 703.2 R 2.763
+(inherit methods and the data structures they)97 715.2 R 1.903
+(operate on from their `)349 84 R(`parent')-.74 E 4.404('c)-.74 G 4.404
+(lasses. This)489.486 84 R 2.378
+(sort of inheritance produces a tree-structured)349 96 R .007(class hierarchy)
+349 108 R 5.007(.I)-.65 G .008(mplementing class hierarchies)418.894 108 R
+(means picking a way to de\214ne trees.)349 120 Q(U)349 136.2 Q F4(NIX)A F2
+2.522(has two ubiquitous tree structures that)5.023 F 1.328
+(seem plausible choices, either of which might)349 148.2 R 1.933
+(be worth barking up: the \214le system and the)349 160.2 R 1.285
+(process tree.)349 172.2 R 1.285(Deciding to make object classes)6.285 F .648
+(conceptually distinct from objects, and making)349 184.2 R 2.717
+(the latter simply instances of object classes,)349 196.2 R 2.254
+(guides our choice.)349 208.2 R 2.253(In this system, executing)7.253 F 1.287
+(processes are objects; programs are their de\214-)349 220.2 R 3.455
+(nitions, the object classes.)349 232.2 R 3.455(The \214le system)8.455 F 3.168
+(implements the class hierarchy)349 244.2 R 8.168(.A)-.65 G 3.168(lthough a)
+499.332 244.2 R 1.425(process can be any executing program image,)349 256.2 R
+(in this system all objects will be shell scripts.)349 268.2 Q F4<83>329 284.4
+Q F2(Polymorphism)349 284.4 Q 5.448(Ag)349 300.6 S 2.948
+(ood object-oriented system lets the pro-)366.668 300.6 R 3.598
+(grammer extend the suite of object classes)349 312.6 R 1.087
+(without changing existing software.)349 324.6 R(Programs)6.088 E 3.394
+(can operate on new kinds of data that get)349 336.6 R 3.044
+(de\214ned long after the code is written.)349 348.6 R(The)8.045 E 1.41
+(same operation may be implemented dif)349 360.6 R(ferent)-.18 E .048
+(ways for dif)349 372.6 R .049(ferent kinds of data, but the invoca-)-.18 F
+1.536(tion of the operation is identical.)349 384.6 R 1.535(What sepa-)6.535 F
+.428(rate compilation provides for functions, object-)349 396.6 R
+(oriented programming provides for data.)349 408.6 Q 2.053
+(For example, if each new object responds to)349 424.8 R F1(pass\(\))349 436.8
+Q F2 4.471(,t)C 1.971(here is no need to change base code)383.191 436.8 R(from)
+349 448.8 Q F0(pass\(X\))359 465 Q F2(to)349 481.2 Q F0
+(if \(object_type\(X\)==BILL\))359 497.4 Q(pass_bill\(X\);)383 509.4 Q
+(else if \(object_type\(X\)==BUCK\))359 521.4 Q(pass_buck\(X\);)383 533.4 Q
+(else if \(object_type\(X\)==GAS\))359 545.4 Q(...)383 557.4 Q F2 1.846
+(C++ and U)349 577.8 R F4(NIX)A F2 1.845(device drivers implement this)4.346 F
+2.646(sort of behavior by using tables of function)349 589.8 R(pointers.)349
+601.8 Q F1 -.37(re)5.622 G(ad\(\)).37 E F2 .622(is always)3.122 F F1 -.37(re)
+3.122 G(ad\(\)).37 E F2 3.121(,w)C .621(hatever the)495.229 601.8 R 3.183
+(device, because the kernel \214gures out what)349 613.8 R .684
+(routine to call based on the device that')349 625.8 R 3.183(sb)-.55 G(eing)
+522.78 625.8 Q(read from.)349 637.8 Q 6.852
+(Many other object-oriented systems, like)349 654 R 2.123
+(Smalltalk, implement polymorphism by pass-)349 666 R 1.096
+(ing messages between objects, which interpret)349 678 R
+(the messages at runtime.)349 690 Q(Thus, the instruction)5 E F0 6(Xp)359 706.2
+S(ass)377 706.2 Q F2 .576(works whether X is a bill or a buck, because it)349
+722.4 R EP
+%%Page: 3 3
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Roman@0 SF 3.834(just sends a message.)97 84 R 3.835
+(Both bill and buck)8.834 F 5.172(understand the message `)97 96 R(`pass,')-.74
+E 7.672('b)-.74 G 5.172(ut each)254.228 96 R 3.816
+(implements the operation with a data-type-)97 108 R(speci\214c method.)97 120
+Q .943(Here, we take this latter approach.)97 136.2 R .942(Class de\214-)5.943
+F 3.41(nitions are shell scripts.)97 148.2 R 3.41(Methods are shell)8.41 F 3.56
+(functions. Messages)97 160.2 R 1.06(are just the names of the)3.56 F .678
+(functions, sent as A)97 172.2 R/F1 9/Times-Roman@0 SF(SCII)A F0 3.178
+(strings. T)3.178 F .679(wo dif)-.7 F(ferent)-.18 E .479
+(scripts are free to use identical names for com-)97 184.2 R(pletely dif)97
+196.2 Q(ferent functions.)-.18 E 2.04(One side-ef)97 212.4 R 2.04
+(fect of this approach is that mes-)-.18 F 2.906
+(sages sent to objects that are)97 224.4 R/F2 10/Times-Italic@0 SF(not)5.406 E
+F0 2.906(names of)5.406 F 1.063
+(functions are interpreted as other sorts of exe-)97 236.4 R 3.48
+(cutable statements: built-ins and shell com-)97 248.4 R 3.355(mands. On)97
+260.4 R .855(\214rst blush, this seems like a horri-)3.355 F .33
+(ble bug; in practice, and to my surprise, it feels)97 272.4 R(like a feature.)
+97 284.4 Q/F3 11/Times-Bold@0 SF 2.75(3. Implementation)72 314.4 R F0
+(Each object is a simple, in\214nite loop:)72 330.6 Q F2(for)82 346.8 Q(ever)
+-.37 E -.37(re)89.5 358.8 S(ad message fr).37 E(om FIFO)-.37 E
+(execute it as a command)89.5 370.8 Q F0 1.26
+(The FIFOs are created in a pre-arranged spot in the)72 387 R .436
+(\214le system and have names tied to the names of their)72 399 R 2.21
+(corresponding objects.)72 411 R 2.21(Messages are sent with the)7.21 F
+(program)72 423 Q F2(send)2.5 E F0 5(.T)C(he command)140.32 423 Q/F4 10
+/Courier@0 SF($)82 439.2 Q F2(send pooh setFood Hunny)6 E F0 .509
+(just writes the message)72 455.4 R F4 .508(setFood Hunny)3.009 F F0 .508
+(to pooh')3.008 F(s)-.55 E(input channel)72 467.4 Q F4(/tmp/ipc/pooh/in.)2.5 E
+F0 2.385(Object creation is trickier)97 483.6 R 4.886(,b)-.4 G 2.386
+(ut not by much.)218.062 483.6 R 1.243
+(Each object class is a shell script, stored in a direc-)72 495.6 R .667
+(tory tree where the directory and subdirectory names)72 507.6 R 2.096
+(are class and subclass names.)72 519.6 R 2.095(Each directory con-)7.096 F
+3.677(tains one script, named)72 531.6 R F4(class)6.177 E F0 6.177(,t)C 3.677
+(hat de\214nes the)222.875 531.6 R .479
+(methods for the class corresponding to that directory)72 543.6 R(.)-.65 E
+2.873(Ar)72 555.6 S .373(equest to create an object of type)85.423 555.6 R F2
+(name)2.874 E F0 .374(starts up a)2.874 F(process like this:)72 567.6 Q F2(use)
+82 583.8 Q/F5 10/Times-BoldItalic@0 SF(\214nd)2.5 E F2(to \214nd dir)2.5 E
+(ectory)-.37 E F5(name)2.5 E F2(sour)82 607.8 Q(ce all the class methods)-.37 E
+(fr)82 619.8 Q(om the r)-.37 E(oot of the class tr)-.37 E(ee)-.37 E
+(down to that de\214nition)82 631.8 Q(cr)82 655.8 Q(eate a FIFO tagged to)-.37
+E(the name of the object)82 667.8 Q(loop for)82 691.8 Q(ever)-.37 E 2.5(,r)
+-1.11 G(eading and executing messages)138.2 691.8 Q(\(as shown above\).)82
+703.8 Q F0 -.7(Ta)349 84 S 2.382(ken together).7 F(,)-.4 E F4(send)4.882 E F0
+(and)4.882 E F4(create)4.882 E F0 2.381(are cur)4.881 F(-)-.2 E .547
+(rently only a little over 100 lines of shell code.)324 96 R(\(The)5.547 E F4
+(new)324 108 Q F0(and)3.36 E F4(destroy)3.36 E F0 .86
+(commands, used in the example)3.36 F 1.482
+(in the \214rst section, are just loops that call)324 120 R F4(create)3.983 E
+F0(and)324 132 Q F4(send exit)2.5 E F0(for each of their ar)2.5 E(guments.\))
+-.18 E 6.256(Ah)349 148.2 S 3.756(andful of interesting things fall out of)
+367.476 148.2 R(implementing objects this way)324 160.2 Q(.)-.65 E/F6 8
+/Times-Roman@0 SF<83>329 176.4 Q F0 2.038
+(Process manipulation commands can be used)349 176.4 R 1.443
+(to handle objects.)349 188.4 R -1(Yo)6.443 G 3.943(uc)1 G 1.443
+(an search for objects)453.202 188.4 R(with)349 200.4 Q/F7 10/Times-Bold@0 SF
+(ps)2.5 E F0(and destroy them with)2.5 E F7(kill -9)2.5 E F0(.)A F6<83>329
+216.6 Q F0 2.928(Every object understands normal shell com-)349 216.6 R 4.312
+(mands. Not)349 228.6 R 1.811(only can you see if an object is)4.311 F 1.759
+(alive, but you can see if it')349 240.6 R 4.259(sp)-.55 G 1.759
+(aying attention)478.521 240.6 R(with commands like this:)349 252.6 Q F4($)359
+268.8 Q F2(send pooh date)6 E F4(Sun Jan 23 21:00:25 MST 1994)359 280.8 Q F6
+<83>329 301.2 Q F0 -1(Yo)349 301.2 S 3.388(uc)1 G .888(an kill objects with)
+373.048 301.2 R F4(exit)3.387 E F0 5.887(.T)C .887(his is enor)493.986 301.2 R
+(-)-.2 E 1.866(mously comforting.)349 313.2 R 1.867(\(Since I haven')6.866 F
+4.367(tg)-.18 G 1.867(one to)513.413 313.2 R 2.566
+(great lengths to make this system any more)349 325.2 R 2.923
+(bullet-proof than it deserves to be, it')349 337.2 R 5.423(sa)-.55 G(lso)
+528.33 337.2 Q(enormously necessary)349 349.2 Q(.\))-.65 E F6<83>329 365.4 Q F0
+-1(Yo)349 365.4 S 5.229(uc)1 G 2.729(an add methods to objects on the \215y)
+374.889 365.4 R(.)-.65 E(This sort of thing actually works:)349 377.4 Q F4($)
+359 393.6 Q F2(send X 'zzazz\(\) { echo foo }')6 E F4($)359 405.6 Q F2
+(send X zzazz)6 E F4(foo)359 417.6 Q F0 .786
+(From time to time, this last feature has proven)349 433.8 R
+(itself a useful debugging tool.)349 445.8 Q F3 2.75(4. Real)324 475.8 R(Code)
+2.75 E F0(Enough abstract chatter)324 492 Q 5(.L)-.55 G(et')431.48 492 Q 2.5
+(ss)-.55 G(ee some code.)451.76 492 Q F3 2.75(4.1. send)324 522 R F7(send)349
+538.2 Q F0 5.223(,s)C 2.723(hown in \214gure 2, sends messages to)380.063 538.2
+R(objects.)324 550.2 Q .4 LW 329 562.2 324 562.2 DL 330 562.2 325 562.2 DL 335
+562.2 330 562.2 DL 340 562.2 335 562.2 DL 345 562.2 340 562.2 DL 350 562.2 345
+562.2 DL 355 562.2 350 562.2 DL 360 562.2 355 562.2 DL 365 562.2 360 562.2 DL
+370 562.2 365 562.2 DL 375 562.2 370 562.2 DL 380 562.2 375 562.2 DL 385 562.2
+380 562.2 DL 390 562.2 385 562.2 DL 395 562.2 390 562.2 DL 400 562.2 395 562.2
+DL 405 562.2 400 562.2 DL 410 562.2 405 562.2 DL 415 562.2 410 562.2 DL 420
+562.2 415 562.2 DL 425 562.2 420 562.2 DL 430 562.2 425 562.2 DL 435 562.2 430
+562.2 DL 440 562.2 435 562.2 DL 445 562.2 440 562.2 DL 450 562.2 445 562.2 DL
+455 562.2 450 562.2 DL 460 562.2 455 562.2 DL 465 562.2 460 562.2 DL 470 562.2
+465 562.2 DL 475 562.2 470 562.2 DL 480 562.2 475 562.2 DL 485 562.2 480 562.2
+DL 490 562.2 485 562.2 DL 495 562.2 490 562.2 DL 500 562.2 495 562.2 DL 505
+562.2 500 562.2 DL 510 562.2 505 562.2 DL 515 562.2 510 562.2 DL 520 562.2 515
+562.2 DL 525 562.2 520 562.2 DL 530 562.2 525 562.2 DL 535 562.2 530 562.2 DL
+540 562.2 535 562.2 DL F4 6(#s)324 586.2 S(end a message)342 586.2 Q
+(case $1 in)324 610.2 Q(-d\) msgtype=D)336 622.2 Q(shift ;;)348 634.2 Q 6
+(*\) msgtype=C)336 646.2 R(;;)6 E(esac)324 658.2 Q(T_NAME=$1)324 682.2 Q(shift)
+324 694.2 Q(T_DIR=/tmp/ipc/$T_NAME)324 718.2 Q EP
+%%Page: 4 4
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Courier@0 SF(T_IN=$T_DIR/in)72 84 Q(T_OUT=$T_DIR/out)72 96 Q(USAGE=\\)72
+108 Q("usage: $\(basename $0\) obj msg")72 120 Q(abort\(\) { # print and bail)
+72 144 Q(echo $* 1>&2)84 156 Q(exit 1)84 168 Q(})72 180 Q
+(test $# -gt 0 || abort $USAGE)72 204 Q(test -d $T_DIR ||)72 228 Q
+(abort $T_NAME: no such object)72 240 Q(echo -e $msgtype "$*" > $T_IN)72 264 Q
+(test $msgtype = "D" || cat $T_OUT)72 276 Q(exit 0)72 300 Q/F1 10/Times-Roman@0
+SF(Figure 2.)150.28 324 Q(send)5 E .4 LW 77 336 72 336 DL 78 336 73 336 DL 83
+336 78 336 DL 88 336 83 336 DL 93 336 88 336 DL 98 336 93 336 DL 103 336 98 336
+DL 108 336 103 336 DL 113 336 108 336 DL 118 336 113 336 DL 123 336 118 336 DL
+128 336 123 336 DL 133 336 128 336 DL 138 336 133 336 DL 143 336 138 336 DL 148
+336 143 336 DL 153 336 148 336 DL 158 336 153 336 DL 163 336 158 336 DL 168 336
+163 336 DL 173 336 168 336 DL 178 336 173 336 DL 183 336 178 336 DL 188 336 183
+336 DL 193 336 188 336 DL 198 336 193 336 DL 203 336 198 336 DL 208 336 203 336
+DL 213 336 208 336 DL 218 336 213 336 DL 223 336 218 336 DL 228 336 223 336 DL
+233 336 228 336 DL 238 336 233 336 DL 243 336 238 336 DL 248 336 243 336 DL 253
+336 248 336 DL 258 336 253 336 DL 263 336 258 336 DL 268 336 263 336 DL 273 336
+268 336 DL 278 336 273 336 DL 283 336 278 336 DL 288 336 283 336 DL .506
+(All object I/O channels are in subdirectories of)97 364.2 R/F2 10
+/Times-Italic@0 SF(/tmp/ipc)72 376.2 Q F1 5.982(.E)C .981
+(ach named object has a subdirectory that)119.372 376.2 R .613
+(corresponds to its name,)72 388.2 R F0(T_DIR)3.114 E F1 3.114(,a)C .614
+(nd all \214les associ-)214.218 388.2 R 2.154
+(ated with that object are within that directory)72 400.2 R 7.153(.B)-.65 G(y)
+283 400.2 Q 2.561(default, each object has at least an input channel,)72 412.2
+R F0(T_IN)72 424.2 Q F1 2.989(,t)C .489
+(hrough which messages arrive, and an output)104.269 424.2 R(channel,)72 436.2
+Q F0(T_OUT)2.5 E F1 2.5(,t)C 2.5(ow)145.88 436.2 S(hich returns are sent.)160.6
+436.2 Q 1.192(The code shown above sets environment vari-)97 452.4 R .937
+(ables to point at the right channels, and then, after a)72 464.4 R .602
+(brief sanity check, echoes its ar)72 476.4 R .603(gument into the input)-.18 F
+.756(channel and reads the objects response from the out-)72 488.4 R
+(put channel.)72 500.4 Q 4.314(There are at least two restrictions of this)97
+516.6 R 2.859(design. First,)72 528.6 R .359
+(the name space is global to the system;)2.859 F 1.874
+(only one object on the entire system can be called)72 540.6 R -.74(``)72 552.6
+S(foo').74 E 3.892('a)-.74 G 3.892(ta)105.502 552.6 S 1.391(ny given time.)
+116.614 552.6 R 1.391(Second, there')6.391 F 3.891(sn)-.55 G 3.891(op)254.669
+552.6 S(rovi-)268.56 552.6 Q 2.141
+(sion for tying returns to the messages that elicited)72 564.6 R 2.983
+(them; if two objects send messages to a third at)72 576.6 R .013
+(nearly the same time, there isn')72 588.6 R 2.513(ta)-.18 G .014
+(ny way to guarantee)207.148 588.6 R .603
+(that the return value one of the senders retrieves cor)72 600.6 R(-)-.2 E 2.21
+(responds to the message it sent.)72 612.6 R 4.71(Am)7.21 G 2.21(ore sophisti-)
+236.07 612.6 R .448(cated implementation might nest object directories as)72
+624.6 R .189(subdirectories under the directories of the objects that)72 636.6
+R 1.34(created them, and use a more sophisticated messag-)72 648.6 R 1.657
+(ing scheme to provide a virtual circuit between the)72 660.6 R
+(messenger and the messagee.)72 672.6 Q 1.237
+(Even after accepting these limitations, at least)97 688.8 R
+(two problems require immediate solution.)72 700.8 Q 2.281
+(The \214rst of these is the deadlock that arises)349 84 R 2.923
+(when object A sends a message to object B and)324 96 R .516
+(object B, or some object further down the line, sends)324 108 R 3.271(am)324
+120 S .771(essage to object A before object B has replied to)339.491 120 R -.83
+-1.11(A' s)324 132 T .303(original message.)3.913 F .304
+(In these cases, object A cannot)5.304 F 3.124
+(read the incoming message because it is blocked)324 144 R 2.213(reading B')324
+156 R 4.713(so)-.55 G 2.214(utput channel.)381.756 156 R 2.214
+(The general case is a)7.214 F .012
+(general problem, but in a some cases object A doesn')324 168 R(t)-.18 E 1.616
+(really need B')324 180 R 4.116(sa)-.55 G(nswer)395.778 180 Q 4.116(,a)-.4 G
+1.616(nd can go on to listen for)430.314 180 R 1.725
+(incoming messages as soon as it dispatches a mes-)324 192 R 1.269(sage to B.)
+324 204 R 1.269(For just such cases,)6.269 F/F3 10/Times-Bold@0 SF(send)3.769 E
+F1 1.269(accepts a \215ag,)3.769 F F2(-d)324 216 Q F1 4.955(,t)C 2.455
+(hat means `)342.565 216 R(`don')-.74 E 4.955(tw)-.18 G 2.455
+(ait for an answer)429.27 216 R(.')-.55 E(')-.74 E F3(Send)7.455 E F1 .84
+(prepends a `D' to such `)324 228 R(`datagrams,')-.74 E 3.34('a)-.74 G .84
+(nd replies are)484.45 228 R(neither expected nor supplied.)324 240 Q .665
+(The second problem is trickier)349 256.2 R 5.664(.I)-.55 G 3.164(nt)484.802
+256.2 S .664(he absence)495.746 256.2 R .734
+(of special arrangements, an open of a FIFO for writ-)324 268.2 R .761
+(ing will only complete when that FIFO has an avail-)324 280.2 R 3.851
+(able reader)324 292.2 R 8.851(.C)-.55 G(onsider)389.462 292.2 Q 6.352(,t)-.4 G
+3.852(hen, what happens when)430.134 292.2 R .608
+(object A sends a message to itself, using a command)324 304.2 R(like)324 316.2
+Q F0(echo $msg > /tmp/ipc/A/in.)334 332.4 Q F1(The)324 348.6 Q F3(echo)3.097 E
+F1 .597(will block, awaiting a reader)3.097 F 3.098(,p)-.4 G .598(reventing A)
+491.912 348.6 R 1.173(from ever executing the read that would move)324 360.6 R
+F3(echo)3.672 E F1(past the block.)324 372.6 Q 5.115
+(The current implementation side-steps this)349 388.8 R .431
+(problem by providing each object with a built-in ver)324 400.8 R(-)-.2 E 1.502
+(sion of)324 412.8 R F3(send)4.002 E F1 6.502(.W)C 1.502
+(henever an object notices that it is)394.896 412.8 R 1.275
+(sending a message to itself, it executes the message)324 424.8 R 1.193
+(directly instead of trying to write the message to its)324 436.8 R .685
+(own input channel.)324 448.8 R .685(\(See \214gure 7.\))5.685 F .685
+(An alternative to)5.685 F 2.105(this would be putting)324 460.8 R F3(echo)
+4.605 E F1 2.105(in the background, but)4.605 F 1.287
+(that would use up process slots, a resource that this)324 472.8 R .82
+(system already strains.)324 484.8 R .82(Another alternative might be)5.82 F
+(writing substitutes for)324 496.8 Q F3 -.18(re)2.5 G(ad).18 E F1(and)2.5 E F3
+(echo)2.5 E F1(.)A/F4 11/Times-Bold@0 SF 2.75(4.2. cr)324 526.8 R(eate)-.198 E
+F1 1.68(More complex than)349 543 R F3(send)4.18 E F1(is)4.18 E F3(cr)4.18 E
+(eate)-.18 E F1 4.18(,s)C 1.68(hown in)505.82 543 R(\214gure 3.)324 555 Q 329
+567 324 567 DL 330 567 325 567 DL 335 567 330 567 DL 340 567 335 567 DL 345 567
+340 567 DL 350 567 345 567 DL 355 567 350 567 DL 360 567 355 567 DL 365 567 360
+567 DL 370 567 365 567 DL 375 567 370 567 DL 380 567 375 567 DL 385 567 380 567
+DL 390 567 385 567 DL 395 567 390 567 DL 400 567 395 567 DL 405 567 400 567 DL
+410 567 405 567 DL 415 567 410 567 DL 420 567 415 567 DL 425 567 420 567 DL 430
+567 425 567 DL 435 567 430 567 DL 440 567 435 567 DL 445 567 440 567 DL 450 567
+445 567 DL 455 567 450 567 DL 460 567 455 567 DL 465 567 460 567 DL 470 567 465
+567 DL 475 567 470 567 DL 480 567 475 567 DL 485 567 480 567 DL 490 567 485 567
+DL 495 567 490 567 DL 500 567 495 567 DL 505 567 500 567 DL 510 567 505 567 DL
+515 567 510 567 DL 520 567 515 567 DL 525 567 520 567 DL 530 567 525 567 DL 535
+567 530 567 DL 540 567 535 567 DL F0 6(#c)324 591 S(reate a new object)342 591
+Q(O_DIR=/tmp/ipc/$2)324 615 Q(O_IN=$O_DIR/in)324 627 Q(O_OUT=$O_DIR/out)324 639
+Q(O_BIN=${O_BIN:-$HOME/obj/bin})324 663 Q(O_CLASS=$1)324 675 Q(O_NAME=$2)324
+687 Q(O_PATH=/bin:/usr/bin:$O_BIN)324 699 Q(O_ROOTS=${O_ROOTS:-$HOME/obj/objs})
+324 711 Q(export O_BIN O_CLASS O_NAME)324 723 Q EP
+%%Page: 5 5
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Courier@0 SF(export O_PATH O_ROOTS)72 84 Q(USAGE=\\)72 108 Q
+("usage: $\(basename $0\) class obj")72 120 Q(abort\(\) {)72 144 Q
+(echo $* 1>&2)84 156 Q(exit 1)84 168 Q(})72 180 Q
+(test $# -eq 2 || abort $USAGE)72 204 Q 6(#c)72 228 S
+(leanliness is next to godliness)90 228 Q(cleanup\(\) {)72 240 Q
+(trap "" 0 1 2 3 15)84 252 Q(rm -rf $O_DIR)84 264 Q(exit 0)84 276 Q(})72 288 Q
+(event_loop\(\) {)72 312 Q(trap "cleanup" 0 1 2 3 15)84 324 Q
+(while read pkt < $O_IN)84 336 Q(do)84 348 Q(type=${pkt%% *})96 360 Q
+(msg=${pkt#[A-Z] })96 372 Q(if test $type = "D")96 396 Q(then)96 408 Q
+(PATH=$O_PATH eval $msg)108 420 Q(else)96 432 Q(PATH=$O_PATH eval $msg \\)108
+444 Q(>$O_OUT)120 456 Q(fi)96 468 Q 6(#h)96 480 S(ack around BSDI timing bug)
+114 480 Q(sleep 1)96 492 Q(done)84 504 Q(})72 516 Q(get_obj_chain\(\) {)72 540
+Q 6(#f)84 564 S(ind object and superclasses)102 564 Q(IFS=:)84 576 Q
+(set $O_ROOTS)84 588 Q 12(IFS=' ')84 600 R(for i)84 612 Q(do)84 624 Q
+(test -f $i/class || continue)96 636 Q(obj_root=$\()96 648 Q(find $i \\)108 660
+Q(-type d \\)120 672 Q(-name $O_CLASS \\)120 684 Q(-print)120 696 Q(\))96 708 Q
+(test -n $obj_root && break)96 720 Q(done)336 84 Q
+(test -z $obj_root && abort $USAGE)336 96 Q 6(#n)336 120 S(ow set up paths)354
+120 Q(d=$obj_root)336 132 Q(O_PATH=$O_PATH:$d)336 144 Q(O_DEFS=$d)336 156 Q
+(while test "$d" != "$i")336 168 Q(do)336 180 Q(d=${d%/*})348 192 Q
+(O_DEFS=$d" $O_DEFS")348 204 Q(O_PATH=$O_PATH:$d)348 216 Q(done)336 228 Q
+(unset d i)336 252 Q(})324 264 Q 6(#c)324 288 S(reate message channels)342 288
+Q(make_channels\(\) {)324 300 Q(test -d $O_DIR &&)336 312 Q
+(abort "Duplicate $O_NAME")348 324 Q(mkdir -p $O_DIR ||)336 336 Q
+(abort "Can't make $O_DIR")348 348 Q(mkfifo $O_IN ||)336 360 Q
+(abort "Can't make $O_IN")348 372 Q(mkfifo $O_OUT ||)336 384 Q
+(abort "Can't make $O_OUT")348 396 Q(})324 408 Q 6(#b)324 432 S
+(uild the object from definitions)342 432 Q(mkobj\(\) {)324 444 Q
+(for d in $O_DEFS)336 456 Q(do)336 468 Q 6(.$)348 480 S(d/class 2>/dev/null)366
+480 Q(done)336 492 Q(})324 504 Q(get_obj_chain)324 528 Q(make_channels)324 540
+Q(mkobj)324 552 Q(event_loop &)324 564 Q/F1 10/Times-Roman@0 SF(Figure 3.)
+399.51 588 Q(create)5 E .4 LW 329 600 324 600 DL 330 600 325 600 DL 335 600 330
+600 DL 340 600 335 600 DL 345 600 340 600 DL 350 600 345 600 DL 355 600 350 600
+DL 360 600 355 600 DL 365 600 360 600 DL 370 600 365 600 DL 375 600 370 600 DL
+380 600 375 600 DL 385 600 380 600 DL 390 600 385 600 DL 395 600 390 600 DL 400
+600 395 600 DL 405 600 400 600 DL 410 600 405 600 DL 415 600 410 600 DL 420 600
+415 600 DL 425 600 420 600 DL 430 600 425 600 DL 435 600 430 600 DL 440 600 435
+600 DL 445 600 440 600 DL 450 600 445 600 DL 455 600 450 600 DL 460 600 455 600
+DL 465 600 460 600 DL 470 600 465 600 DL 475 600 470 600 DL 480 600 475 600 DL
+485 600 480 600 DL 490 600 485 600 DL 495 600 490 600 DL 500 600 495 600 DL 505
+600 500 600 DL 510 600 505 600 DL 515 600 510 600 DL 520 600 515 600 DL 525 600
+520 600 DL 530 600 525 600 DL 535 600 530 600 DL 540 600 535 600 DL 3.574
+(Following initialization and sanity checks,)324 624 R/F2 10/Times-Bold@0 SF
+(cr)6.074 E(eate)-.18 E F1 2.006
+(makes four function calls to create an object.)324 636 R(The)7.006 E(\214rst,)
+324 648 Q/F3 10/Times-Italic@0 SF(get_obj_chain)4.367 E F1 4.367(,s)C 1.867
+(ets the variable)414.404 648 R F0(O_DEFS)4.367 E F1 1.868(to a)4.367 F 2.663
+(list of directory names, starting at the root object)324 660 R(directory)324
+672 Q 4.62(,t)-.65 G 2.12(hat end in the directory that de\214nes the)369.35
+672 R 3.082(class. For)324 684 R .581(the class)3.082 F F3(littleDog)3.081 E F1
+3.081(,f)C .581(rom our earlier exam-)450.787 684 R(ple,)324 696 Q F0(O_DEFS)
+2.635 E F1 .136(would be set to)2.635 F F0 .136(objs objs/animal)2.636 F
+(objs/animal/dog)324 708 Q(objs/animal/dog/littleDog)324 720 Q EP
+%%Page: 6 6
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Roman@0 SF(Next,)97 84 Q/F1 10/Times-Italic@0 SF(make_channels)
+2.72 E F0 .22(creates the input and out-)2.72 F(put channels used by)72 96 Q/F2
+10/Courier@0 SF(send)2.5 E F0(.)A(Third,)97 112.2 Q F1(mkobj)3.335 E F0 .835
+(visits the directories in)3.335 F F2(O_DEFS)3.335 E F0(,)A 2.727
+(reading class de\214nitions.)72 124.2 R 2.727(Because of the order in)7.727 F
+(which)72 136.2 Q F1(get_obj_chain)7.39 E F0 4.89(sets up)7.39 F F2(O_DEFS)7.39
+E F0 7.39(,m)C(ethods)261.89 136.2 Q 2.208
+(de\214ned in subclasses supplement or override those)72 148.2 R
+(de\214ned in parent classes.)72 160.2 Q(Finally)97 176.4 Q(,)-.65 E F1
+(event_loop)6.825 E F0 4.325(loops in\214nitely)6.825 F 6.825(,r)-.65 G(eading)
+261.34 176.4 Q 1.31(messages and writing responses on the pair of mes-)72 188.4
+R 1.798(sage queues set up by)72 200.4 R F1(make_channels)4.297 E F0 6.797(.I)C
+4.297(ft)244.416 200.4 S 1.797(he mes-)254.823 200.4 R 1.382
+(sage is the name of a function call \212 a method \212)72 212.4 R .719
+(that function is invoked.)72 224.4 R(Otherwise,)5.719 E F1(eval)3.219 E F0
+.718(looks for a)3.219 F(shell built-in or a U)72 236.4 Q/F3 8/Times-Roman@0 SF
+(NIX)A F0(command to execute.)2.5 E 2.583(Ad)97 252.6 S .083
+(isadvantage of the approach sketched above)111.803 252.6 R .052
+(is that there isn')72 264.6 R 2.552(ta)-.18 G 2.552(ne)145.908 264.6 S .052
+(asy way to say `)157.9 264.6 R .051(`use my parent')-.74 F(s)-.55 E .685
+(de\214nition of this method')72 276.6 R .686('; when an object de\214nition)
+-.74 F .721(overrides a method de\214ned by a parent, that parental)72 288.6 R
+(method becomes completely unavailable.)72 300.6 Q 1.816
+(In an earlier version of this code,)97 316.8 R F1(event_loop)4.316 E F0
+(looked like this:)72 328.8 Q F2(event_loop\(\) {)82 345 Q
+(trap "cleanup" 0 1 2 3 15)100 357 Q(while read msg < $O_ICHAN)100 369 Q(do)100
+381 Q(eval $msg > $O_OCHAN)118 393 Q(done)100 405 Q(cleanup)100 417 Q(})82 429
+Q F0 .093(In the version shown in \214gure 3,)72 457.2 R F1(get_obj_chain)2.592
+E F0(stores)2.592 E .516
+(the path to the directory that contains the object de\214-)72 469.2 R 2.643
+(nition in)72 481.2 R F2(O_PATH)5.143 E F0 5.143(,f)C 2.642
+(or later use in creative ways,)160.379 481.2 R .699
+(including pre\214xing it to the path used by)72 493.2 R/F4 10/Times-Bold@0 SF
+(eval)3.199 E F0 5.699(.H)C(av-)275.23 493.2 Q 1.317
+(ing that path available makes it possible to back up)72 505.2 R 1.62
+(through the class hierarchy searching for a parental)72 517.2 R 4.63
+(method. I've)72 529.2 R 2.13(experimented with this, but the trick)4.63 F
+(isn')72 541.2 Q 2.608(te)-.18 G .108
+(ntirely satisfactory; a more sophisticated imple-)96.648 541.2 R 1.099
+(mentation should \214nd a more interesting way to use)72 553.2 R F2(O_PATH)72
+565.2 Q F0(or)3.195 E F2(O_DEFS)3.195 E F0 .696
+(to gain access to parental-class)3.196 F(methods.)72 577.2 Q(Like)97 593.4 Q
+F4(send)4.59 E F0 4.59(,w)C 2.09(hich has a single, global name-)153.68 593.4 R
+.077(space for objects,)72 605.4 R F4(cr)2.578 E(eate)-.18 E F0 .078
+(uses a global name space for)2.578 F .96(object classes.)72 617.4 R .96
+(The system will not support two dif-)5.96 F .488
+(ferent de\214nitions of class `)72 629.4 R(`dog')-.74 E 2.989('. On)-.74 F
+.489(the other hand,)2.989 F 1.614
+(users can point at their own object-class de\214nitions)72 641.4 R .668
+(by setting)72 653.4 R F2(O_ROOTS)3.168 E F0 3.168(,e)C .669
+(ven invocation by invocation.)167.114 653.4 R 1.859
+(Another limitation of this system is that it is)97 669.6 R 2.411
+(restricted to single inheritance; each class has one)72 681.6 R .882
+(and only one parent class \212 that of its parent direc-)72 693.6 R(tory)72
+705.6 Q 6.316(.A)-.65 G 1.316(lthough links might make it possible to pro-)
+103.496 705.6 R 2.567(vide an interesting way to implement and explore)72 717.6
+R 2.426(multiple inheritance, everyone knows that multiple)324 84 R
+(inheritance is a bad idea [Car)324 96 Q(gill91].)-.18 E/F5 11/Times-Bold@0 SF
+2.75(4.3. new)324 126 R(and destr)2.75 E(oy)-.198 E F0 1.893
+(Returning now to the example, we can show)349 142.2 R F4(new)324 154.2 Q F0
+(\(\214gure 4\) and)2.5 E F4(destr)2.5 E(oy)-.18 E F0(\(\214gure 5\).)2.5 E .4
+LW 329 166.2 324 166.2 DL 330 166.2 325 166.2 DL 335 166.2 330 166.2 DL 340
+166.2 335 166.2 DL 345 166.2 340 166.2 DL 350 166.2 345 166.2 DL 355 166.2 350
+166.2 DL 360 166.2 355 166.2 DL 365 166.2 360 166.2 DL 370 166.2 365 166.2 DL
+375 166.2 370 166.2 DL 380 166.2 375 166.2 DL 385 166.2 380 166.2 DL 390 166.2
+385 166.2 DL 395 166.2 390 166.2 DL 400 166.2 395 166.2 DL 405 166.2 400 166.2
+DL 410 166.2 405 166.2 DL 415 166.2 410 166.2 DL 420 166.2 415 166.2 DL 425
+166.2 420 166.2 DL 430 166.2 425 166.2 DL 435 166.2 430 166.2 DL 440 166.2 435
+166.2 DL 445 166.2 440 166.2 DL 450 166.2 445 166.2 DL 455 166.2 450 166.2 DL
+460 166.2 455 166.2 DL 465 166.2 460 166.2 DL 470 166.2 465 166.2 DL 475 166.2
+470 166.2 DL 480 166.2 475 166.2 DL 485 166.2 480 166.2 DL 490 166.2 485 166.2
+DL 495 166.2 490 166.2 DL 500 166.2 495 166.2 DL 505 166.2 500 166.2 DL 510
+166.2 505 166.2 DL 515 166.2 510 166.2 DL 520 166.2 515 166.2 DL 525 166.2 520
+166.2 DL 530 166.2 525 166.2 DL 535 166.2 530 166.2 DL 540 166.2 535 166.2 DL
+F2 6(#c)324 190.2 S(reate a set of objects)342 190.2 Q(USAGE=\\)324 214.2 Q
+("new class obj [obj ...]")324 226.2 Q(abort\(\) {)324 238.2 Q(echo $* 1>&2)336
+250.2 Q(exit 1)336 262.2 Q(})324 274.2 Q(test $# -ge 2 ||)324 298.2 Q
+(abort "$USAGE")324 310.2 Q(class=$1)324 334.2 Q(shift)324 346.2 Q(for i)324
+370.2 Q(do)324 382.2 Q(create $class $i)336 394.2 Q(done)324 406.2 Q F0
+(Figure 4.)403.115 430.2 Q(new)5 E 329 442.2 324 442.2 DL 330 442.2 325 442.2
+DL 335 442.2 330 442.2 DL 340 442.2 335 442.2 DL 345 442.2 340 442.2 DL 350
+442.2 345 442.2 DL 355 442.2 350 442.2 DL 360 442.2 355 442.2 DL 365 442.2 360
+442.2 DL 370 442.2 365 442.2 DL 375 442.2 370 442.2 DL 380 442.2 375 442.2 DL
+385 442.2 380 442.2 DL 390 442.2 385 442.2 DL 395 442.2 390 442.2 DL 400 442.2
+395 442.2 DL 405 442.2 400 442.2 DL 410 442.2 405 442.2 DL 415 442.2 410 442.2
+DL 420 442.2 415 442.2 DL 425 442.2 420 442.2 DL 430 442.2 425 442.2 DL 435
+442.2 430 442.2 DL 440 442.2 435 442.2 DL 445 442.2 440 442.2 DL 450 442.2 445
+442.2 DL 455 442.2 450 442.2 DL 460 442.2 455 442.2 DL 465 442.2 460 442.2 DL
+470 442.2 465 442.2 DL 475 442.2 470 442.2 DL 480 442.2 475 442.2 DL 485 442.2
+480 442.2 DL 490 442.2 485 442.2 DL 495 442.2 490 442.2 DL 500 442.2 495 442.2
+DL 505 442.2 500 442.2 DL 510 442.2 505 442.2 DL 515 442.2 510 442.2 DL 520
+442.2 515 442.2 DL 525 442.2 520 442.2 DL 530 442.2 525 442.2 DL 535 442.2 530
+442.2 DL 540 442.2 535 442.2 DL F2 6(#d)324 466.2 S(estroy a set of objects)342
+466.2 Q(USAGE=\\)324 490.2 Q("destroy obj [obj ...]")324 502.2 Q(abort\(\) {)
+324 514.2 Q(echo $* 1>&2)336 526.2 Q(exit 1)336 538.2 Q(})324 550.2 Q
+(test $# -ge 1 ||)324 574.2 Q(abort "$USAGE")324 586.2 Q(for i)324 610.2 Q(do)
+324 622.2 Q(send $i destroy)336 634.2 Q(done)324 646.2 Q F0(Figure 5.)396.725
+670.2 Q(destroy)5 E 329 682.2 324 682.2 DL 330 682.2 325 682.2 DL 335 682.2 330
+682.2 DL 340 682.2 335 682.2 DL 345 682.2 340 682.2 DL 350 682.2 345 682.2 DL
+355 682.2 350 682.2 DL 360 682.2 355 682.2 DL 365 682.2 360 682.2 DL 370 682.2
+365 682.2 DL 375 682.2 370 682.2 DL 380 682.2 375 682.2 DL 385 682.2 380 682.2
+DL 390 682.2 385 682.2 DL 395 682.2 390 682.2 DL 400 682.2 395 682.2 DL 405
+682.2 400 682.2 DL 410 682.2 405 682.2 DL 415 682.2 410 682.2 DL 420 682.2 415
+682.2 DL 425 682.2 420 682.2 DL 430 682.2 425 682.2 DL 435 682.2 430 682.2 DL
+440 682.2 435 682.2 DL 445 682.2 440 682.2 DL 450 682.2 445 682.2 DL 455 682.2
+450 682.2 DL 460 682.2 455 682.2 DL 465 682.2 460 682.2 DL 470 682.2 465 682.2
+DL 475 682.2 470 682.2 DL 480 682.2 475 682.2 DL 485 682.2 480 682.2 DL 490
+682.2 485 682.2 DL 495 682.2 490 682.2 DL 500 682.2 495 682.2 DL 505 682.2 500
+682.2 DL 510 682.2 505 682.2 DL 515 682.2 510 682.2 DL 520 682.2 515 682.2 DL
+525 682.2 520 682.2 DL 530 682.2 525 682.2 DL 535 682.2 530 682.2 DL 540 682.2
+535 682.2 DL .772(As advertised earlier)349 710.4 R 3.271(,e)-.4 G .771
+(ach of these is a simple)443.105 710.4 R 6.735(loop. The)324 722.4 R 4.236
+(earliest version of destroy was even)6.735 F EP
+%%Page: 7 7
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Roman@0 SF(simpler:)72 84 Q/F1 10/Courier@0 SF(for i)82 100.2 Q
+(do)82 112.2 Q(send $i exit)100 124.2 Q(done)82 136.2 Q F0 .823
+(This works because each object inherits the methods)72 152.4 R .892
+(understood by the base class \212 the shell augmented)72 164.4 R 1.937
+(by a few basic methods.)72 176.4 R 1.936(The current version calls)6.936 F/F2
+10/Times-Italic@0 SF(destr)72 188.4 Q(oy)-.37 E F0 .488
+(instead, which lets each object de\214ne its own)2.987 F(destructor)72 200.4 Q
+6.538(.\()-.55 G 1.537(The base class de\214nes a simple default)123.808 200.4
+R F2(destr)72 212.4 Q(oy)-.37 E F0 2.5(,s)C(hown in the next section.\))109.96
+212.4 Q 1.086(One alternative to explicit calls to)97 228.6 R/F3 10
+/Times-Bold@0 SF(destr)3.586 E(oy)-.18 E F0(for)3.586 E 2.494
+(each object would be to make)72 240.6 R F3(new)4.993 E F0 2.493(keep track of)
+4.993 F 1.126(objects it has created and let)72 252.6 R F3(destr)3.626 E(oy)
+-.18 E F0 1.127(destroy every-)3.627 F(thing.)72 264.6 Q 2.874
+(Because of encapsulation, the easiest imple-)97 280.8 R 1.795
+(mentation would incorporate)72 292.8 R F2(new)4.295 E F0 1.795
+(as a method in a)4.295 F .85(more sophisticated base class.)72 304.8 R .85
+(An odd side-ef)5.85 F .85(fect of)-.18 F
+(this is that classes could rede\214ne)72 316.8 Q F2(new)2.5 E F0(.)A/F4 11
+/Times-Bold@0 SF 2.75(4.4. hop:)72 346.8 R 2.75(as)2.75 G(imple class)130.674
+346.8 Q F0 5.05(Having constructed the infrastructure, let')97 363 R(s)-.55 E
+(look at a simple class de\214nition \(\214gure 6\).)72 375 Q .4 LW 77 387 72
+387 DL 78 387 73 387 DL 83 387 78 387 DL 88 387 83 387 DL 93 387 88 387 DL 98
+387 93 387 DL 103 387 98 387 DL 108 387 103 387 DL 113 387 108 387 DL 118 387
+113 387 DL 123 387 118 387 DL 128 387 123 387 DL 133 387 128 387 DL 138 387 133
+387 DL 143 387 138 387 DL 148 387 143 387 DL 153 387 148 387 DL 158 387 153 387
+DL 163 387 158 387 DL 168 387 163 387 DL 173 387 168 387 DL 178 387 173 387 DL
+183 387 178 387 DL 188 387 183 387 DL 193 387 188 387 DL 198 387 193 387 DL 203
+387 198 387 DL 208 387 203 387 DL 213 387 208 387 DL 218 387 213 387 DL 223 387
+218 387 DL 228 387 223 387 DL 233 387 228 387 DL 238 387 233 387 DL 243 387 238
+387 DL 248 387 243 387 DL 253 387 248 387 DL 258 387 253 387 DL 263 387 258 387
+DL 268 387 263 387 DL 273 387 268 387 DL 278 387 273 387 DL 283 387 278 387 DL
+288 387 283 387 DL F1($)72 423 Q F2(cat objs/hop)6 E F1 6(#c)72 435 S(lass hop)
+90 435 Q(hop\(\) {)72 459 Q(if test "$*" = "on pop")84 471 Q(then)84 483 Q
+(echo -n "Stop!)96 495 Q(")192 495 Q(echo "You must not hop on pop.")96 507 Q
+(else)84 519 Q(echo "hippity hop")96 531 Q(fi)84 543 Q(return 0)84 555 Q(})72
+567 Q($)72 579 Q F2(cr)6 E(eate hop X)-.37 E F1($)72 591 Q F2(send X hop)6 E F1
+(hippity hop)72 603 Q($)72 615 Q F2(send X hop on pop)6 E F1 6(Stop! You)72 627
+R(must not hop on pop.)6 E($)72 639 Q F2(send X foo)6 E F1($)72 651 Q F2
+(send X exit)6 E F1($)72 663 Q F2(send X hop)6 E F1(X: no such object)72 675 Q
+F0(Figure 6.)139.86 699 Q(Class hop)5 E 77 711 72 711 DL 78 711 73 711 DL 83
+711 78 711 DL 88 711 83 711 DL 93 711 88 711 DL 98 711 93 711 DL 103 711 98 711
+DL 108 711 103 711 DL 113 711 108 711 DL 118 711 113 711 DL 123 711 118 711 DL
+128 711 123 711 DL 133 711 128 711 DL 138 711 133 711 DL 143 711 138 711 DL 148
+711 143 711 DL 153 711 148 711 DL 158 711 153 711 DL 163 711 158 711 DL 168 711
+163 711 DL 173 711 168 711 DL 178 711 173 711 DL 183 711 178 711 DL 188 711 183
+711 DL 193 711 188 711 DL 198 711 193 711 DL 203 711 198 711 DL 208 711 203 711
+DL 213 711 208 711 DL 218 711 213 711 DL 223 711 218 711 DL 228 711 223 711 DL
+233 711 228 711 DL 238 711 233 711 DL 243 711 238 711 DL 248 711 243 711 DL 253
+711 248 711 DL 258 711 253 711 DL 263 711 258 711 DL 268 711 263 711 DL 273 711
+268 711 DL 278 711 273 711 DL 283 711 278 711 DL 288 711 283 711 DL
+(The entire class de\214nition is a single method:)324 84 Q F2(hop)2.5 E F0(.)A
+3.548(Although this is an elementary example, it)349 100.2 R
+(illustrates a few interesting points:)324 112.2 Q 12.5(\(1\) De\214ning)329
+128.4 R .45(methods is easy; it doesn')2.95 F 2.95(tr)-.18 G .45(equire a)
+507.62 128.4 R(lot of special syntax.)355.66 140.4 Q 12.5(\(2\) Class)329 156.6
+R 1.282(de\214nitions are small.)3.782 F 1.281(While code size)6.282 F 1.997
+(is not the only measure of the quality of a)355.66 168.6 R 1.098
+(programming language \212 else we would all)355.66 180.6 R .373
+(program in APL \212 code size strongly af)355.66 192.6 R(fects)-.18 E 1.302
+(maintenance and debugging ef)355.66 204.6 R 1.302(forts; bug fre-)-.18 F 1.936
+(quency per line appears to be roughly con-)355.66 216.6 R 5.398
+(stant across languages [Brooks75].)355.66 228.6 R(Less)521.67 228.6 Q
+(code, fewer bugs.)355.66 240.6 Q .308
+(As an illustration, Sessions contrasts the code)355.66 264.6 R
+(to make a dog bark in C:)355.66 276.6 Q F1(void printDog\(dog *thisDog,)365.66
+292.8 Q(int dogType\))377.66 304.8 Q({)365.66 316.8 Q(printf\("\\n%s says\\n",)
+377.66 328.8 Q(getName\(\(dog *\) thisDog\)\);)389.66 340.8 Q(switch dogType {)
+377.66 352.8 Q(case DOG:)389.66 364.8 Q(dogBark\()401.66 376.8 Q
+(\(dog *\) thisDog\);)413.66 388.8 Q(break;)401.66 400.8 Q(case LITTLEDOG:)
+389.66 412.8 Q(littleDogBark\()401.66 424.8 Q(\(littledog *\))413.66 436.8 Q
+(thisDog\);)413.66 448.8 Q(break;)401.66 460.8 Q(case BIGDOG:)389.66 472.8 Q
+(bigDogBark\()401.66 484.8 Q(\(bigdog *\) thisDog\);)413.66 496.8 Q(break;)
+401.66 508.8 Q(})377.66 520.8 Q(})365.66 532.8 Q F0
+(with the code to do the same job in C++:)355.66 549 Q F1
+(void printDog\(dog *thisDog\))365.66 565.2 Q({)365.66 577.2 Q
+(printf\("\\n%s says\\n",)377.66 589.2 Q(thisDog->getName\(\)\);)389.66 601.2 Q
+(thisDog->bark\(\);)377.66 613.2 Q(})365.66 625.2 Q F0(Here')355.66 641.4 Q 2.5
+(st)-.55 G(he same code in the shell:)387.04 641.4 Q F1(echo $thisDog says)
+365.66 657.6 Q(send $thisDog bark)365.66 669.6 Q F0 12.5(\(3\) W)329 690 R
+2.592(e've chosen to ignore nonsense requests.)-.8 F 1.598
+(The consequences of changing that decision)355.66 702 R .504
+(can be explored by toying with)355.66 714 R F2(event_loop)3.004 E F0(in)3.004
+E EP
+%%Page: 8 8
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF(cr)103.66 84 Q(eate)-.18 E/F1 10/Times-Roman@0 SF 12.5
+(\(4\) Methods)77 100.2 R(can have ar)2.5 E(guments.)-.18 E 2.04
+(This example becomes even more interesting)97 116.4 R 2.699
+(when we notice that we can invoke methods that)72 128.4 R(aren')72 140.4 Q
+2.943(td)-.18 G .443(e\214ned by the class.)103.083 140.4 R .444
+(As \214gure 7 shows, meth-)5.443 F 1.164
+(ods de\214ned by parent classes \(in this case, the class)72 152.4 R 1.171
+(de\214ned in directory)72 164.4 R/F2 10/Times-Italic@0 SF(objs)3.671 E F1
+3.671(\)a)C 1.171(re inherited by their sub-)184.444 164.4 R(classes)72 176.4 Q
+.4 LW 77 188.4 72 188.4 DL 78 188.4 73 188.4 DL 83 188.4 78 188.4 DL 88 188.4
+83 188.4 DL 93 188.4 88 188.4 DL 98 188.4 93 188.4 DL 103 188.4 98 188.4 DL 108
+188.4 103 188.4 DL 113 188.4 108 188.4 DL 118 188.4 113 188.4 DL 123 188.4 118
+188.4 DL 128 188.4 123 188.4 DL 133 188.4 128 188.4 DL 138 188.4 133 188.4 DL
+143 188.4 138 188.4 DL 148 188.4 143 188.4 DL 153 188.4 148 188.4 DL 158 188.4
+153 188.4 DL 163 188.4 158 188.4 DL 168 188.4 163 188.4 DL 173 188.4 168 188.4
+DL 178 188.4 173 188.4 DL 183 188.4 178 188.4 DL 188 188.4 183 188.4 DL 193
+188.4 188 188.4 DL 198 188.4 193 188.4 DL 203 188.4 198 188.4 DL 208 188.4 203
+188.4 DL 213 188.4 208 188.4 DL 218 188.4 213 188.4 DL 223 188.4 218 188.4 DL
+228 188.4 223 188.4 DL 233 188.4 228 188.4 DL 238 188.4 233 188.4 DL 243 188.4
+238 188.4 DL 248 188.4 243 188.4 DL 253 188.4 248 188.4 DL 258 188.4 253 188.4
+DL 263 188.4 258 188.4 DL 268 188.4 263 188.4 DL 273 188.4 268 188.4 DL 278
+188.4 273 188.4 DL 283 188.4 278 188.4 DL 288 188.4 283 188.4 DL/F3 10
+/Courier@0 SF($)72 212.4 Q F2(cr)6 E(eate hop X)-.37 E F3($)72 224.4 Q F2
+(send X self)6 E F3(X)72 236.4 Q($)72 248.4 Q F2(send X class)6 E F3(hop)72
+260.4 Q($)72 272.4 Q F2(cat objs/class)6 E F3 6(#f)72 284.4 S
+(undamental methods)90 284.4 Q(abort\(\) { # print and bail)72 308.4 Q
+(echo $* 1>&2)84 320.4 Q(exit 1)84 332.4 Q(})72 344.4 Q(class\(\) {)72 368.4 Q
+(echo $O_CLASS)84 380.4 Q(})72 392.4 Q(debug\(\) {)72 416.4 Q(echo $O_NAME: $*)
+84 428.4 Q(})72 440.4 Q(defs\(\) {)72 464.4 Q(for d in $O_DEFS)84 476.4 Q(do)84
+488.4 Q(cat $d/class 2>/dev/null)96 500.4 Q(done)84 512.4 Q(})72 524.4 Q
+(_destroy\(\) {)72 548.4 Q(test $# -eq 0 && exit 0)84 560.4 Q
+(test $0 = "self" && exit 0)84 572.4 Q(for i)84 596.4 Q(do)84 608.4 Q
+(send -d $i destroy)96 620.4 Q(done)84 632.4 Q(})72 644.4 Q(destroy\(\) {)72
+668.4 Q(_destroy $*)84 680.4 Q(})72 692.4 Q(self\(\) {)72 716.4 Q(echo $O_NAME)
+336 84 Q(})324 96 Q(send\(\) {)324 120 Q 6(#s)384 120 S(end a message)402 120 Q
+(case $1 in)336 144 Q(-d\) msgtype=D;)348 156 Q(shift ;;)360 168 Q 6
+(*\) msgtype=C)348 180 R(;;)6 E(esac)336 192 Q(T_NAME=$1)336 216 Q(shift)336
+228 Q(T_DIR=/tmp/ipc/$T_NAME)336 240 Q(T_IN=$T_DIR/in)336 252 Q
+(T_OUT=$T_DIR/out)336 264 Q(USAGE="usage: send obj msg")336 288 Q
+(test $# -gt 0 || abort $USAGE)336 300 Q(if test "$T_NAME" = "$O_NAME" ||)336
+324 Q(test "$T_NAME" = "self")348 336 Q(then)336 348 Q(PATH=$O_PATH eval $*)348
+360 Q(return 0)348 372 Q(fi)336 384 Q(test -d $T_DIR ||)336 408 Q
+(abort $T_NAME: no such object)336 420 Q(echo -e $msgtype "$*" > $T_IN)336 444
+Q(test $msgtype = "D" || cat $T_OUT)336 456 Q(})324 468 Q F1(Figure 7.)382.565
+492 Q(The base class)5 E 329 504 324 504 DL 330 504 325 504 DL 335 504 330 504
+DL 340 504 335 504 DL 345 504 340 504 DL 350 504 345 504 DL 355 504 350 504 DL
+360 504 355 504 DL 365 504 360 504 DL 370 504 365 504 DL 375 504 370 504 DL 380
+504 375 504 DL 385 504 380 504 DL 390 504 385 504 DL 395 504 390 504 DL 400 504
+395 504 DL 405 504 400 504 DL 410 504 405 504 DL 415 504 410 504 DL 420 504 415
+504 DL 425 504 420 504 DL 430 504 425 504 DL 435 504 430 504 DL 440 504 435 504
+DL 445 504 440 504 DL 450 504 445 504 DL 455 504 450 504 DL 460 504 455 504 DL
+465 504 460 504 DL 470 504 465 504 DL 475 504 470 504 DL 480 504 475 504 DL 485
+504 480 504 DL 490 504 485 504 DL 495 504 490 504 DL 500 504 495 504 DL 505 504
+500 504 DL 510 504 505 504 DL 515 504 510 504 DL 520 504 515 504 DL 525 504 520
+504 DL 530 504 525 504 DL 535 504 530 504 DL 540 504 535 504 DL .63
+(Most of the methods de\214ned in)349 532.2 R F3(objs/class)3.13 E F1 2.008
+(are simple utility methods.)324 544.2 R 2.009(The motivation for the)7.009 F
+(one long method,)324 556.2 Q F2(send)2.5 E F1 2.5(,w)C
+(as given in section 4.1.)426.77 556.2 Q/F4 11/Times-Bold@0 SF 2.75
+(4.5. animals)324 586.2 R F1 2.013(The code for to our original animal example)
+349 602.4 R(shows inheritance in practice \(\214gure 8\).)324 614.4 Q 329 626.4
+324 626.4 DL 330 626.4 325 626.4 DL 335 626.4 330 626.4 DL 340 626.4 335 626.4
+DL 345 626.4 340 626.4 DL 350 626.4 345 626.4 DL 355 626.4 350 626.4 DL 360
+626.4 355 626.4 DL 365 626.4 360 626.4 DL 370 626.4 365 626.4 DL 375 626.4 370
+626.4 DL 380 626.4 375 626.4 DL 385 626.4 380 626.4 DL 390 626.4 385 626.4 DL
+395 626.4 390 626.4 DL 400 626.4 395 626.4 DL 405 626.4 400 626.4 DL 410 626.4
+405 626.4 DL 415 626.4 410 626.4 DL 420 626.4 415 626.4 DL 425 626.4 420 626.4
+DL 430 626.4 425 626.4 DL 435 626.4 430 626.4 DL 440 626.4 435 626.4 DL 445
+626.4 440 626.4 DL 450 626.4 445 626.4 DL 455 626.4 450 626.4 DL 460 626.4 455
+626.4 DL 465 626.4 460 626.4 DL 470 626.4 465 626.4 DL 475 626.4 470 626.4 DL
+480 626.4 475 626.4 DL 485 626.4 480 626.4 DL 490 626.4 485 626.4 DL 495 626.4
+490 626.4 DL 500 626.4 495 626.4 DL 505 626.4 500 626.4 DL 510 626.4 505 626.4
+DL 515 626.4 510 626.4 DL 520 626.4 515 626.4 DL 525 626.4 520 626.4 DL 530
+626.4 525 626.4 DL 535 626.4 530 626.4 DL 540 626.4 535 626.4 DL F3($)324 662.4
+Q F2(cat objs/animal)6 E F3 6(#b)324 674.4 S(ase animals methods)342 674.4 Q
+(name=$O_NAME)324 698.4 Q(food="Unknown food.")324 710.4 Q EP
+%%Page: 9 9
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Courier@0 SF(setName\(\) {)72 84 Q(name=$*)84 96 Q(})72 108 Q
+(getName\(\) {)72 120 Q(echo My name is: $name)84 132 Q(})72 144 Q
+(setFood\(\) {)72 156 Q(food=$*)84 168 Q(})72 180 Q(getFood\(\) {)72 192 Q
+(echo My favorite food is: $food)84 204 Q(})72 216 Q($)72 228 Q/F1 10
+/Times-Italic@0 SF(cat objs/animal/dog)6 E F0 6(#d)72 240 S
+(og: all bark, no bite)90 240 Q(bark\(\) {)72 264 Q(echo Unknown Dog Noise)84
+276 Q(})72 288 Q($)72 300 Q F1(cat objs/animal/dog/littleDog)6 E F0 6(#al)72
+312 S(ittle dog)102 312 Q(bark\(\) {)72 336 Q(echo woof woof)84 348 Q
+(echo woof woof)84 360 Q(})72 372 Q($)72 396 Q F1(cat objs/animal/dog/bigDog)6
+E F0 6(#aB)72 408 S(IG DOG)102 408 Q(bark\(\) {)72 432 Q(for i in 0 1 2 3 4)84
+444 Q(do)84 456 Q(echo WOOF WOOF)96 468 Q(done)84 480 Q(})72 492 Q/F2 10
+/Times-Roman@0 SF(Figure 8.)127.92 516 Q(Animal Objects)5 E .4 LW 77 528 72 528
+DL 78 528 73 528 DL 83 528 78 528 DL 88 528 83 528 DL 93 528 88 528 DL 98 528
+93 528 DL 103 528 98 528 DL 108 528 103 528 DL 113 528 108 528 DL 118 528 113
+528 DL 123 528 118 528 DL 128 528 123 528 DL 133 528 128 528 DL 138 528 133 528
+DL 143 528 138 528 DL 148 528 143 528 DL 153 528 148 528 DL 158 528 153 528 DL
+163 528 158 528 DL 168 528 163 528 DL 173 528 168 528 DL 178 528 173 528 DL 183
+528 178 528 DL 188 528 183 528 DL 193 528 188 528 DL 198 528 193 528 DL 203 528
+198 528 DL 208 528 203 528 DL 213 528 208 528 DL 218 528 213 528 DL 223 528 218
+528 DL 228 528 223 528 DL 233 528 228 528 DL 238 528 233 528 DL 243 528 238 528
+DL 248 528 243 528 DL 253 528 248 528 DL 258 528 253 528 DL 263 528 258 528 DL
+268 528 263 528 DL 273 528 268 528 DL 278 528 273 528 DL 283 528 278 528 DL 288
+528 283 528 DL 2.368(Here, the class)72 552 R F1(animal)4.868 E F2 2.369
+(de\214nes methods for setting)4.869 F 1.24(and getting an animal')72 564 R
+3.74(sn)-.55 G 1.24(ame and favorite food; the)177.51 564 R(subclass)72 576 Q
+F1(dog)4.343 E F2 1.843(adds a way to make the animal bark,)4.343 F 2.41
+(and sub-sub-classes for little and big dogs replace)72 588 R 1.1
+(that method with ones that generate size-appropriate)72 600 R(noises.)72 612 Q
+/F3 11/Times-Bold@0 SF 2.75(5. Applications)72 642 R/F4 9/Times-Roman@0 SF(Sir)
+92 657 Q 2.454(,a)-.36 G(woman')-.001 E 2.453(sp)-.495 G .203
+(reaching is like a dog')152.748 657 R 2.453(sw)-.495 G(alking)245.5 657 Q .85
+(on his hinder legs.)92 667.8 R .85(It is not done well; but you)5.35 F
+(are surprised to \214nd it done at all.)92 678.6 Q(Boswell')92 700.2 Q(s)-.495
+E/F5 9/Times-Italic@0 SF .555(Life of Johnson, vol 1,)2.805 F F4 2.804(p4)2.804
+G .554(28, 31 July)227.139 700.2 R(1763)92 711 Q F2 -.74(``)349 84 S 2.431
+(Cute idea,').74 F 4.931('y)-.74 G 2.431(ou say)413.752 84 R 4.931(,`)-.65 G
+2.431(`but is this good for)451.384 84 R 5.718
+(implementing real applications?')324 96 R 10.717('P)-.74 G 5.717(robably not.)
+485.953 96 R .44(Still, it seems worth snif)324 108 R .44
+(\214ng around to see what sorts)-.18 F .195
+(of things besides barking dogs might be interesting to)324 120 R
+(implement with it.)324 132 Q F3 2.75(5.1. Starting)324 162 R(small ...)2.75 E
+F2 .818(When I was soliciting suggestions for interest-)349 178.2 R .639
+(ing applications to implement, Doug Pintar)324 190.2 R 3.138(,o)-.4 G 3.138
+(fA)510.212 190.2 S(ztec)523.9 190.2 Q .764(Engineering, laconically suggested)
+324 202.2 R/F6 10/Times-Bold@0 SF(emacs)3.264 E F2 5.764(.W)C .764(hile an)
+512.296 202.2 R F6(emacs)324 214.2 Q F2 .739
+(implementation might not \214t within the page-)3.239 F .094
+(limit length imposed by this conference, I can include)324 226.2 R 4.247(am)
+324 238.2 S 1.747(ore contained, but logically equivalent, applica-)340.467
+238.2 R 6.213(tion. Appendix)324 250.2 R 6.214(As)6.213 G 3.714
+(hows the code for a T)413.75 250.2 R(uring)-.35 E 3.939(machine. The)324 262.2
+R 1.438(text below)3.939 F 3.938(,s)-.65 G 1.438(ketches the implementa-)
+439.364 262.2 R .549(tion of each of the classes.)324 274.2 R .549
+(The example, taken from)5.549 F .943
+(the nearest automata theory text to hand [Manna78],)324 286.2 R
+(recognizes strings of the form)324 298.2 Q F1(a)422.464 316.2 Q/F7 7
+/Times-Italic@0 SF(n)427.893 312 Q F1(b)432.3 316.2 Q F7(n)437.739 312 Q F3
+3.82(5.1.1. T)324 338.4 R 1.07(uring machine)-1.012 F F2 1.07
+(The machine itself is an)9.32 F .21
+(object that creates a tape object and \214ve nodes.)324 350.4 R(After)5.21 E
+1.689(initializing all the objects, loading the tape with an)324 362.4 R .369
+(input string and the nodes with their transition tables,)324 374.4 R 1.555
+(it starts up by telling the \214rst node to go, and then)324 386.4 R 1.857
+(awaits an announcement of success or failure from)324 398.4 R 1.298
+(some node down the line.)324 410.4 R 1.299(When the announcement)6.299 F 3.877
+(arrives, the machine writes the result as output;)324 422.4 R
+(destroys the nodes it has created; and exits.)324 434.4 Q F3 2.75(5.1.2. T)324
+464.4 R(ape)-1.012 E F2 1.101(The tape itself is trivial.)349 480.6 R 1.102
+(Input data are stored)6.101 F 2.132
+(as a string, and there are a handful of methods to)324 492.6 R 1.048
+(move along the tape and to read or write at the cur)324 504.6 R(-)-.2 E 1.096
+(rent position.)324 516.6 R(\(W)6.096 E 1.096
+(e've tried to avoid mixed-case dis-)-.8 F 2.258
+(ease, which seems endemic to object-oriented pro-)324 528.6 R 2.43
+(grammers, but)324 540.6 R F1(Read)4.93 E F2 2.43(requires an initial, upper)
+4.93 F(-case)-.2 E 1.73(`R' because)324 552.6 R F1 -.37(re)4.23 G(ad).37 E F2
+1.73(is reserved by the shell.)4.23 F F1 -.55(Wr)6.73 G(ite).55 E F2(is)4.23 E
+(just following suit.\))324 564.6 Q 1.861
+(The position is just a numeric index into the)349 580.8 R 3.026
+(string, maintained using the P)324 592.8 R/F8 8/Times-Roman@0 SF(OSIX)A F2
+(shell')5.526 E 5.526(sb)-.55 G(uilt-in)515.55 592.8 Q(arithmetic facilities.)
+324 604.8 Q F3 3.312(5.1.3. Node)324 634.8 R F2 .561(Nodes, too, are objects.)
+8.811 F .561(When called)5.561 F .095
+(on, a node reads the current cell on the tape and looks)324 646.8 R .828
+(up the entry for the character it reads in a dictionary)324 658.8 R 1.933
+(of transitions that it creates and maintains \(another)324 670.8 R .357
+(object, described in the next section\).)324 682.8 R -.35(Tr)5.357 G .357
+(ansitions are).35 F 2.524(at)324 694.8 S .024
+(riple containing a character to write into the current)333.744 694.8 R .12
+(cell, a direction to move, and a new node to call.)324 706.8 R(The)5.12 E
+1.144(current node writes the prescribed character into the)324 718.8 R EP
+%%Page: 10 10
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Roman@0 SF 2.738
+(cell, moves either left or right, and then calls on)72 84 R .719
+(another node \(possibly itself\) to handle the next cell.)72 96 R 1.137
+(If the dictionary reveals that the node has reached a)72 108 R 2.941
+(decision to accept or reject the input string, then)72 120 R .794
+(instead of passing control to a new node, the current)72 132 R .743
+(node sends the message)72 144 R/F1 10/Times-Italic@0 SF(accept)3.243 E F0(or)
+3.243 E F1 -.37(re)3.243 G(ject).37 E F0 .744(to the origi-)3.244 F(nal T)72
+156 Q(uring machine.)-.35 E 2.18(The absence of returns and lack of a single,)
+97 172.2 R 1.84(centralized transition table lend a palpably unstruc-)72 184.2
+R(tured aura to the process.)72 196.2 Q 3.256
+(Although this implementation uses a colon-)97 212.4 R 1.245
+(separated array to store the three pieces of informa-)72 224.4 R .189
+(tion associated with each possible input character and)72 236.4 R 2.69
+(teases them apart with)72 248.4 R/F2 10/Times-Bold@0 SF(cut)5.19 E F0 5.19(,p)
+C 2.69(erformance could be)200.43 248.4 R 1.296
+(improved somewhat by using the shell')72 260.4 R 3.795(sp)-.55 G 1.295
+(re\214x- and)248.105 260.4 R(suf)72 272.4 Q 18.11
+(\214x-shaving operators \212)-.18 F F1(${P)238.08 272.4 Q(ARAME-)-1.29 E
+(TER%%expr)72 284.4 Q(ession})-.37 E F0 .859
+(and friends \212 to do the parsing)3.359 F(without recourse to subprocesses.)
+72 296.4 Q/F3 11/Times-Bold@0 SF 4.447(5.1.4. Dictionary)72 326.4 R F0 4.197
+(Ad)9.947 G 1.698(ictionary stores its entries)180.416 326.4 R 1.777
+(as shell variables whose names are constructed on-)72 338.4 R
+(the-\215y from the words being de\214ned.)72 350.4 Q(The command)5 E/F4 10
+/Courier@0 SF($)82 366.6 Q F1(send $DICTIONAR)6 E 2.5(Yd)-.18 G
+(e\214ne and dumb)184.93 366.6 Q F0(turns into the assignment)72 382.8 Q F4
+(def_and=dumb)82 399 Q F0 1.484(In a better world, the shell might have arrays)
+97 419.4 R .596(\(indeed, the Korn shell does\), but P)72 431.4 R/F5 8
+/Times-Roman@0 SF(OSIX)A F0 .595(shells aren')3.095 F(t)-.18 E .789
+(required to have them, and this work-around is good)72 443.4 R
+(enough for our example.)72 455.4 Q F3 2.75(5.2. ...)72 485.4 R
+(then getting smaller)2.75 E(.)-1.012 E F0 1.771
+(Exploiting the ability of objects to learn new)97 501.6 R .301
+(methods at run-time, we can also create a simpler but)72 513.6 R .583
+(more tantalizing application.)72 525.6 R .583(The code shown in \214g-)5.583 F
+2.367(ure 9 shows a method that sends itself to another)72 537.6 R
+(object: a virus.)72 549.6 Q .4 LW 77 561.6 72 561.6 DL 78 561.6 73 561.6 DL 83
+561.6 78 561.6 DL 88 561.6 83 561.6 DL 93 561.6 88 561.6 DL 98 561.6 93 561.6
+DL 103 561.6 98 561.6 DL 108 561.6 103 561.6 DL 113 561.6 108 561.6 DL 118
+561.6 113 561.6 DL 123 561.6 118 561.6 DL 128 561.6 123 561.6 DL 133 561.6 128
+561.6 DL 138 561.6 133 561.6 DL 143 561.6 138 561.6 DL 148 561.6 143 561.6 DL
+153 561.6 148 561.6 DL 158 561.6 153 561.6 DL 163 561.6 158 561.6 DL 168 561.6
+163 561.6 DL 173 561.6 168 561.6 DL 178 561.6 173 561.6 DL 183 561.6 178 561.6
+DL 188 561.6 183 561.6 DL 193 561.6 188 561.6 DL 198 561.6 193 561.6 DL 203
+561.6 198 561.6 DL 208 561.6 203 561.6 DL 213 561.6 208 561.6 DL 218 561.6 213
+561.6 DL 223 561.6 218 561.6 DL 228 561.6 223 561.6 DL 233 561.6 228 561.6 DL
+238 561.6 233 561.6 DL 243 561.6 238 561.6 DL 248 561.6 243 561.6 DL 253 561.6
+248 561.6 DL 258 561.6 253 561.6 DL 263 561.6 258 561.6 DL 268 561.6 263 561.6
+DL 273 561.6 268 561.6 DL 278 561.6 273 561.6 DL 283 561.6 278 561.6 DL 288
+561.6 283 561.6 DL F4($)72 585.6 Q F1(cat oneline)6 E F4 6(#p)72 597.6 S
+(ut everything on one line)90 597.6 Q(tr -s ' \\n\\t' '[ *]')72 621.6 Q($)72
+633.6 Q F1(infect\(\))6 E F4(>)72 645.6 Q F1({)6 E F4(>)72 657.6 Q F1
+(send $1 \\"$\(typeset -f infect|oneline\)\\")6 E F4(>)72 669.6 Q F1(})6 E F4
+($)72 681.6 Q F1(new null X)6 E F4($)72 693.6 Q F1(infect X)6 E F4($)72 705.6 Q
+F1(send X typeset -f infect)6 E F4(infect \(\))72 717.6 Q({)324 84 Q
+(send $1 "$\(typeset -f infect |)336 96 Q(oneline\)")336 108 Q(})324 120 Q($)
+324 132 Q F1(new null Y)6 E F4($)324 144 Q F1(send X infect Y)6 E F4($)324 156
+Q F1(send Y typeset -f infect)6 E F4(infect \(\))324 168 Q({)324 180 Q
+(send $1 "$\(typeset -f infect |)336 192 Q(oneline\)")336 204 Q(})324 216 Q F0
+(Figure 9.)380.355 240 Q 2.5(AS)5 G(imple V)436.745 240 Q(irus)-.6 E 329 252
+324 252 DL 330 252 325 252 DL 335 252 330 252 DL 340 252 335 252 DL 345 252 340
+252 DL 350 252 345 252 DL 355 252 350 252 DL 360 252 355 252 DL 365 252 360 252
+DL 370 252 365 252 DL 375 252 370 252 DL 380 252 375 252 DL 385 252 380 252 DL
+390 252 385 252 DL 395 252 390 252 DL 400 252 395 252 DL 405 252 400 252 DL 410
+252 405 252 DL 415 252 410 252 DL 420 252 415 252 DL 425 252 420 252 DL 430 252
+425 252 DL 435 252 430 252 DL 440 252 435 252 DL 445 252 440 252 DL 450 252 445
+252 DL 455 252 450 252 DL 460 252 455 252 DL 465 252 460 252 DL 470 252 465 252
+DL 475 252 470 252 DL 480 252 475 252 DL 485 252 480 252 DL 490 252 485 252 DL
+495 252 490 252 DL 500 252 495 252 DL 505 252 500 252 DL 510 252 505 252 DL 515
+252 510 252 DL 520 252 515 252 DL 525 252 520 252 DL 530 252 525 252 DL 535 252
+530 252 DL 540 252 535 252 DL 2.25(The script)349 280.2 R F2(oneline)4.75 E F0
+2.25(is a work-around for two)4.75 F .028(implementation problems.)324 292.2 R
+.028(First, with the code shown)5.028 F .047
+(here any methods learned at runtime must \214t on a sin-)324 304.2 R 1.334
+(gle line.)324 316.2 R 1.334(Second, shell quoting conventions make it)6.334 F
+.982(annoyingly dif)324 328.2 R .981(\214cult to \214t the)-.18 F F2(tr)3.481 E
+F0 .981(command inside the)3.481 F(function itself.)324 340.2 Q(\(W)349 356.4 Q
+4.566(ec)-.8 G 2.067(onfess to having resorted to occasional)374.416 356.4 R
+1.188(non-standard shell extensions to avoid other lengthy)324 368.4 R .32
+(circumlocutions, particularly)324 380.4 R F1 .32(echo -e)2.82 F F0 .32
+(which interprets)2.82 F 1.764(many of the usual shell escape characters like)
+324 392.4 R F1(`\\n')4.263 E F0(,)A(and)324 404.4 Q F1(typeset)3.323 E F0 3.323
+(,A)C .823(ll these shell scripts run under)382.576 404.4 R F2(bash)3.324 E F0
+3.324(,a)C 2.472(publicly available P)324 416.4 R F5(OSIX)A F0 2.471
+(-conforming shell, and the)B .772(extensions are those provided by)324 428.4 R
+F2(bash.)3.272 E F0 .773(Other P)5.773 F F5(OSIX)A F0
+(shells provide analogous extensions.\))324 440.4 Q 3.796(Am)349 456.6 S 1.296
+(ore sophisticated)367.796 456.6 R F1(infect)3.796 E F0 1.295(would go out and)
+3.796 F .58(hunt for other objects to infect, A more sophisticated)324 468.6 R
+F1(cr)324 480.6 Q(eate)-.37 E F0(routine would permit multi-line messages.)2.5
+E F3 5.323(5.3. Summary)324 510.6 R F0 2.573(Neither of these applications is)
+405.838 510.6 R 1.497
+(particularly long \(or useful\), but each illustrates the)324 522.6 R 1.742
+(capability and extensibility of this relatively simple)324 534.6 R .352
+(system, and the power and \215exibility of the shell as a)324 546.6 R
+(programming language.)324 558.6 Q 2.49
+(As a parting note, we observe that, the two)349 574.8 R 1.307
+(applications can be used in consort: despite its sim-)324 586.8 R(plicity)324
+598.8 Q 6.108(,l)-.65 G 3.607(imitations, and implementation dependen-)360.298
+598.8 R .632(cies, the virus shown above can be used to infect the)324 610.8 R
+-.35(Tu)324 622.8 S 1.172(ring machine described above to give it a cold in).35
+F(its nodes.)324 634.8 Q F3(6.)324 664.8 Q/F6 11/Times-BoldItalic@0 SF
+(send Paper exit)5.5 E F0 .299(This is hardly a complete system.)324 681 R .299
+(On the other hand,)5.299 F(it')324 693 Q 4.539(ss)-.55 G 4.539(os)344.659 693
+S 2.039(imple that an average under)358.088 693 R 2.038(graduate who')-.18 F(s)
+-.55 E 1.406(already familiar with U)324 705 R F5(NIX)A F0 1.407
+(at the shell level should)3.907 F 1.686
+(be able to play with objects without \214rst having to)324 717 R EP
+%%Page: 11 11
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Roman@0 SF .175(wrap his mind around a conventional OOPS like C++)
+72 84 R .53(or Smalltalk.)72 96 R 3.03(Ar)5.53 G .53(eally good under)143.31 96
+R .53(graduate should be)-.18 F 3.461
+(able to enhance it in interesting ways without a)72 108 R 2.969
+(course in compiler theory)72 120 R 7.968(.I)-.65 G 2.968
+('ve suggested several)196.534 120 R(such enhancements in this paper)72 132 Q
+(.)-.55 E(What')97 148.2 Q 3.923(sm)-.55 G 1.423
+(ore, even though the exercise seems)137.033 148.2 R .108
+(akin to making a sow')72 160.2 R 2.608(se)-.55 G .107
+(ar out of a silk purse, it illus-)171.7 160.2 R .084
+(trates that the shell has more power than many people)72 172.2 R .187
+(give it credit for)72 184.2 R 5.187(.T)-.55 G .187
+(hat said, I'll raise anew a question)150.518 184.2 R 2.095
+(posed by Steve Johnson at the W)72 196.2 R 2.095(inter '94 U)-.4 F/F1 8
+/Times-Roman@0 SF(SENIX)A F0 7.86(conference: `)72 208.2 R(`W)-.74 E 7.86
+(ill object-oriented programming)-.4 F .65(replace the shell?')72 220.2 R 5.65
+('J)-.74 G .65(ohnson intended the question to)158.18 220.2 R 1.345
+(be rhetorical, but I harbor the suspicion that object-)72 232.2 R 1.414
+(oriented shells, and other shells that break from the)72 244.2 R 11.215
+(conventional-programming-language model, are)72 256.2 R .825
+(fruitful areas of research [Budd89].)72 268.2 R .825(Mashey showed)5.825 F
+.332(that creating a shell that was a real programming lan-)72 280.2 R 2.665
+(guage was exactly the right idea, and that people)72 292.2 R 3.323
+(would use a well-designed shell early and often.)72 304.2 R 2.807
+([Mashey76]. Given)72 316.2 R .307(that, I'm surprised that nearly all)2.807 F
+.683(widely available shells today still use C, ALGOL, or)72 328.2 R
+(pocket-teller machines as their models.)72 340.2 Q .203
+(\(A notable exception is Doug Gwyn')97 356.4 R 2.704(s`)-.55 G(`Adven-)254.68
+356.4 Q .044(ture Shell.')72 368.4 R 5.044('T)-.74 G .043
+(hough not a wild success as a program-)130.228 368.4 R -2.13(mer ')72 380.4 R
+4.826(ss)-.55 G 2.327(hell, it has spawned, after a trip through a)103.306
+380.4 R .267(maze of twisty passages, the development of MOOs.\))72 392.4 R
+(Personally)97 408.6 Q 7.486(,I)-.65 G 4.987('ve long wanted to run `)151.886
+408.6 R(`the)-.74 E(spread-shell')72 420.6 Q 5.317('b)-.74 G 2.817(ut I haven')
+136.557 420.6 R 5.316(ta)-.18 G 2.816(ny idea what such a)197.866 420.6 R 1.463
+(thing would do.)72 432.6 R 1.463(If you write one, please send it to)6.463 F
+(me.)72 444.6 Q/F2 11/Times-Bold@0 SF(Acknowledgements)72 474.6 Q F0 1.242
+(My thanks to Dave T)72 490.8 R 1.241(aenzer for patient explanations)-.7 F
+3.637(about objects, Jim Oldroyd and Doug Pintar for)72 502.8 R 1.368
+(humorous discussions about object-oriented applica-)72 514.8 R .854
+(tions, Dick Dunn for working me into a lather about)72 526.8 R 1.69
+(them, and Rob Pike for an apposite quote.)72 538.8 R(Thanks)6.69 E .656
+(also to Mike Karels for \214xing FIFOs in BSDI on the)72 550.8 R(spot at a P)
+72 562.8 Q F1(OSIX)A F0(meeting.)2.5 E F2(Refer)72 592.8 Q(ences)-.198 E F0
+3.438([Budd89] T)72 616.8 R 3.437(im Budd.)-.35 F -.74(``)8.437 G 3.437
+(The design of an object-).74 F 3.762(oriented command interpreter)72 628.8 R
+(,')-.4 E(')-.74 E/F3 10/Times-Italic@0 SF(Softwar)6.263 E 6.263(eP)-.37 G
+(ractice)260.23 628.8 Q(and Experience)72 640.8 Q F0 2.5(,1)C
+(9\(1\), pp. 35-51 \(January 1989\).)144.48 640.8 Q 3.085
+([Brooks75] Fredrick P)72 664.8 R 5.585(.B)-1.11 G 3.085(rooks, Jr)181.805
+664.8 R(..)-.55 E F3 3.085(The Mythical)8.085 F .944
+(Man-Month: Essays on Softwar)72 676.8 R 3.444(eE)-.37 G(ngineering,)215.396
+676.8 Q F0(Addi-)3.444 E 4.828(son W)72 688.8 R(esley)-.8 E 7.328(,R)-.65 G
+4.828(eading, Massachusetts.)138.256 688.8 R 4.828(pp. 93-94)9.828 F(\(1975\).)
+72 700.8 Q([Car)72 724.8 Q .567(gill91] T)-.18 F 3.067(.A)-.74 G 3.067(.C)
+137.484 724.8 S(ar)149.721 724.8 Q .567(gill, `)-.18 F .567
+(`The Case against multiple)-.74 F 1.824(inheritance in C++,')324 84 R(')-.74 E
+F3 1.823(Computing Systems)4.323 F F0 4.323(,V)C 1.823(ol 4\(1\),)508.737 84 R
+(pp. 69-82 \(1991\).)324 96 Q 1.39([Johnson94] Steve Johnson, `)324 120 R 1.39
+(`Objecting to Objects')-.74 F(')-.74 E(U)324 132 Q F1(SENIX)A F0 -.4(Wi)4.16 G
+1.66(nter Conference Invited T).4 F 1.659(alks Submitted)-.7 F
+(Notes, San Francisco, January 1994, pp. 41-61.)324 144 Q .605
+([King89] Roger King, `)324 168 R .605(`My Cat is Object-Oriented,')-.74 F(')
+-.74 E(in)324 180 Q F3 4.557(Object-Oriented Languages, Applications, and)7.058
+F(Databases,)324 192 Q F0 2.997 -.92(W. K)3.657 H 1.157(im & F).92 F 3.657(.L)
+-.8 G(ochovsky)436.955 192 Q 3.657(,e)-.65 G 1.158(ds., Addison-)485.232 192 R
+-.8(We)324 204 S(sley).8 E 2.5(,N)-.65 G(ew Y)364.76 204 Q 2.5(ork. \(1989\).)
+-1 F 2.652([Manna78] Zohar Manna,)324 228 R F3 2.652(Mathematical Theory of)
+5.152 F(Computation,)324 240 Q F0 2.516(McGraw-Hill, New Y)5.016 F 5.016
+(ork. pp.)-1 F(22-23)5.016 E(\(1978\).)324 252 Q 1.696([Mashey76] J. R. Mashey)
+324 276 R 4.196(,`)-.65 G 1.695(`Using a command lan-)440.764 276 R .73
+(guage as a high-level programming language.')324 288 R(')-.74 E F3(Pr)5.73 E
+(o-)-.37 E 1.437(ceedings of the Second International Confer)324 300 R 1.436
+(ence on)-.37 F(Softwar)324 312 Q 2.888(eE)-.37 G(ngineering)368.188 312 Q F0
+2.888(,S)C .388(an Francisco, California.)422.466 312 R(pp.)5.388 E
+(177-181 \(October 1976\).)324 324 Q 3.128([Sessions93] Roger Sessions, `)324
+348 R 3.128(`An Introduction to)-.74 F 4.234
+(Object-Oriented Programming and C++')324 360 R 6.735('U)-.74 G F1(SENIX)
+516.448 360 Q F0 1.344(Summer Conference Invited T)324 372 R 1.344
+(alks Submitted Notes,)-.7 F(Cincinnati, June 1993, pp. 29-38.)324 384 Q F2
+(Biography)324 414 Q/F4 10/Times-Bold@0 SF(Jeffr)324 430.2 Q 1.761
+(ey S. Haemer)-.18 F F0 1.762(is an independent consultant in)4.261 F(Boulder)
+324 442.2 Q 3.26(,C)-.4 G 3.26(olorado. He)368.25 442.2 R .76
+(works, writes, and speaks on)3.26 F 1.305
+(the interrelated topics of internationalization, P)324 454.2 R F1(OSIX)A F0(,)
+A 1.435(open systems, software portability)324 466.2 R 3.935(,a)-.65 G 1.435
+(nd porting.)475.74 466.2 R(Dr)6.435 E(.)-.55 E .765(Haemer has given U)324
+478.2 R F1(NIX)A F0 .766(programming tutorials since)3.266 F 2.563
+(1988 and is a frequently featured speaker at such)324 490.2 R 5.316
+(well-attended industry forums as Expo Kuwait,)324 502.2 R(U)324 514.2 Q F1
+(SENIX)A F0 4.808(,a)C 2.308(nd the Romanian Open Systems Exposi-)366.52 514.2
+R 4.826(tion. He)324 526.2 R 2.327(currently serves as the U)4.827 F F1(SENIX)A
+F0(or)4.827 E(ganiza-)-.18 E(tional representative to the P)324 538.2 Q F1
+(OSIX)A F0(ef)2.5 E(fort.)-.18 E F2(Appendix A: A T)324 568.2 Q(uring Machine)
+-1.012 E .4 LW 329 580.2 324 580.2 DL 330 580.2 325 580.2 DL 335 580.2 330
+580.2 DL 340 580.2 335 580.2 DL 345 580.2 340 580.2 DL 350 580.2 345 580.2 DL
+355 580.2 350 580.2 DL 360 580.2 355 580.2 DL 365 580.2 360 580.2 DL 370 580.2
+365 580.2 DL 375 580.2 370 580.2 DL 380 580.2 375 580.2 DL 385 580.2 380 580.2
+DL 390 580.2 385 580.2 DL 395 580.2 390 580.2 DL 400 580.2 395 580.2 DL 405
+580.2 400 580.2 DL 410 580.2 405 580.2 DL 415 580.2 410 580.2 DL 420 580.2 415
+580.2 DL 425 580.2 420 580.2 DL 430 580.2 425 580.2 DL 435 580.2 430 580.2 DL
+440 580.2 435 580.2 DL 445 580.2 440 580.2 DL 450 580.2 445 580.2 DL 455 580.2
+450 580.2 DL 460 580.2 455 580.2 DL 465 580.2 460 580.2 DL 470 580.2 465 580.2
+DL 475 580.2 470 580.2 DL 480 580.2 475 580.2 DL 485 580.2 480 580.2 DL 490
+580.2 485 580.2 DL 495 580.2 490 580.2 DL 500 580.2 495 580.2 DL 505 580.2 500
+580.2 DL 510 580.2 505 580.2 DL 515 580.2 510 580.2 DL 520 580.2 515 580.2 DL
+525 580.2 520 580.2 DL 530 580.2 525 580.2 DL 535 580.2 530 580.2 DL 540 580.2
+535 580.2 DL/F5 10/Courier@0 SF 6(#t)324 604.2 S(uring machine)342 604.2 Q 18
+(#r)324 616.2 S(ecognizes a^n b^n)354 616.2 Q(MACHINE=$O_NAME)324 640.2 Q
+(TAPE=${MACHINE}_T)324 652.2 Q(export MACHINE TAPE)324 664.2 Q(destroy\(\) {)
+324 688.2 Q(#debug destroy $*)336 700.2 Q(_destroy $TAPE s1 s2 s3 s4 s5)336
+712.2 Q(exit)336 724.2 Q EP
+%%Page: 12 12
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Courier@0 SF(})72 84 Q(accept\(\) {)72 108 Q(echo ACCEPT!)84 120 Q
+(destroy)84 132 Q(})72 144 Q(reject\(\) {)72 168 Q(echo REJECT!)84 180 Q
+(destroy)84 192 Q(})72 204 Q(new tape $TAPE)72 228 Q(new node s1 s2 s3 s4 s5)72
+240 Q(send $TAPE load aabb)72 264 Q 6(#H)72 288 S(ard-wire the nodes.)90 288 Q
+6(#I)72 300 S(t'd be nicer to have this)90 300 Q 6(#l)72 312 S
+(oad from a file.)90 312 Q(send s1 transition a A:right:s2)72 336 Q
+(send s1 transition _ X:right:accept)72 348 Q(send s2 transition B B:right:s2)
+72 372 Q(send s2 transition a a:right:s2)72 384 Q
+(send s2 transition b B:left:s3)72 396 Q(send s3 transition B B:left:s3)72 420
+Q(send s3 transition a a:left:s4)72 432 Q(send s3 transition A A:right:s5)72
+444 Q(send s4 transition a a:left:s4)72 468 Q(send s4 transition A A:right:s1)
+72 480 Q(send s5 transition B B:right:s5)72 504 Q
+(send s5 transition _ X:right:accept)72 516 Q(send -d s1 goto)72 540 Q/F1 10
+/Times-Roman@0 SF(Figure A1.)123.655 564 Q -.35(Tu)5 G(ring Machine).35 E .4 LW
+77 576 72 576 DL 78 576 73 576 DL 83 576 78 576 DL 88 576 83 576 DL 93 576 88
+576 DL 98 576 93 576 DL 103 576 98 576 DL 108 576 103 576 DL 113 576 108 576 DL
+118 576 113 576 DL 123 576 118 576 DL 128 576 123 576 DL 133 576 128 576 DL 138
+576 133 576 DL 143 576 138 576 DL 148 576 143 576 DL 153 576 148 576 DL 158 576
+153 576 DL 163 576 158 576 DL 168 576 163 576 DL 173 576 168 576 DL 178 576 173
+576 DL 183 576 178 576 DL 188 576 183 576 DL 193 576 188 576 DL 198 576 193 576
+DL 203 576 198 576 DL 208 576 203 576 DL 213 576 208 576 DL 218 576 213 576 DL
+223 576 218 576 DL 228 576 223 576 DL 233 576 228 576 DL 238 576 233 576 DL 243
+576 238 576 DL 248 576 243 576 DL 253 576 248 576 DL 258 576 253 576 DL 263 576
+258 576 DL 268 576 263 576 DL 273 576 268 576 DL 278 576 273 576 DL 283 576 278
+576 DL 288 576 283 576 DL F0 6(#T)72 600 S(uring machine tape)90 600 Q(unset S)
+72 624 Q(typeset -i n)72 636 Q(typeset -i j)72 648 Q(right\(\) {)72 672 Q
+(let n=n+1)84 684 Q(return 0)84 696 Q(})72 708 Q(left\(\) {)324 84 Q
+(if test $n -le 1)336 96 Q(then)336 108 Q(echo HALT)348 120 Q(return 1)348 132
+Q(else)336 144 Q(let n=n-1)348 156 Q(return 0)348 168 Q(fi)336 180 Q(})324 192
+Q(load\(\) {)324 216 Q(S=$1)336 228 Q(let n=1)336 240 Q(return 0)336 252 Q(})
+324 264 Q(print\(\) {)324 288 Q(echo $S)336 300 Q(let j=n)336 312 Q
+(while let j=j-1)336 324 Q(do)336 336 Q(echo -n ' ')348 348 Q(done)336 360 Q
+(echo '^')336 372 Q(return 0)336 384 Q(})324 396 Q(Write\(\) {)324 420 Q
+(let left_neighbor=n-1)336 432 Q(let right_neighbor=n+1)336 444 Q
+(left=$\(echo $S |)336 456 Q(cut -c -$left_neighbor\))348 468 Q
+(right=$\(echo $S |)336 480 Q(cut -c $right_neighbor-\))348 492 Q
+(S=${left}$1${right})336 504 Q(return 0)336 516 Q(})324 528 Q(Read\(\) {)324
+552 Q(if test $n -gt ${#S})336 564 Q(then)336 576 Q(echo '_' > $O_OUT)348 588 Q
+(else)336 600 Q(echo $S |)348 612 Q(cut -c $n >$O_OUT)360 624 Q(fi)336 636 Q
+(return 0)336 648 Q(})324 660 Q F1(Figure A2.)364.76 684 Q -.35(Tu)5 G
+(ring Machine T).35 E(ape)-.7 E 329 696 324 696 DL 330 696 325 696 DL 335 696
+330 696 DL 340 696 335 696 DL 345 696 340 696 DL 350 696 345 696 DL 355 696 350
+696 DL 360 696 355 696 DL 365 696 360 696 DL 370 696 365 696 DL 375 696 370 696
+DL 380 696 375 696 DL 385 696 380 696 DL 390 696 385 696 DL 395 696 390 696 DL
+400 696 395 696 DL 405 696 400 696 DL 410 696 405 696 DL 415 696 410 696 DL 420
+696 415 696 DL 425 696 420 696 DL 430 696 425 696 DL 435 696 430 696 DL 440 696
+435 696 DL 445 696 440 696 DL 450 696 445 696 DL 455 696 450 696 DL 460 696 455
+696 DL 465 696 460 696 DL 470 696 465 696 DL 475 696 470 696 DL 480 696 475 696
+DL 485 696 480 696 DL 490 696 485 696 DL 495 696 490 696 DL 500 696 495 696 DL
+505 696 500 696 DL 510 696 505 696 DL 515 696 510 696 DL 520 696 515 696 DL 525
+696 520 696 DL 530 696 525 696 DL 535 696 530 696 DL 540 696 535 696 DL F0 6
+(#T)324 720 S(uring machine node)342 720 Q EP
+%%Page: 13 13
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Courier@0 SF(XITIONS=dict_$O_NAME)72 84 Q(new dict $XITIONS)72 96 Q
+(transition\(\) {)72 120 Q(send $XITIONS define $*)84 132 Q(return 0)84 144 Q
+(})72 156 Q(destroy\(\) {)72 180 Q(send -d $XITIONS destroy $*)84 192 Q
+(_destroy $*)84 204 Q(})72 216 Q(goto\(\) {)72 240 Q
+(SYMBOL=$\(send $TAPE Read\))84 252 Q(ACTION=$\()84 264 Q
+(send $XITIONS lookup $SYMBOL)96 276 Q(\))84 288 Q(debug $SYMBOL, $ACTION)84
+312 Q(if test -z "$ACTION")84 336 Q(then)84 348 Q(send -d $MACHINE reject)96
+360 Q(return 0)96 372 Q(fi)84 384 Q(OUT_CHAR=$\(echo $ACTION |)84 408 Q
+(cut -f 1 -d:\))96 420 Q(DIRECTION=$\(echo $ACTION |)84 432 Q(cut -f 2 -d:\))96
+444 Q(NEXT_STATE=$\(echo $ACTION |)84 456 Q(cut -f 3 -d:\))96 468 Q
+(if test $NEXT_STATE = "accept")84 492 Q(then)84 504 Q(send -d $MACHINE accept)
+96 516 Q(return 0)96 528 Q(fi)84 540 Q(send $TAPE Write $OUT_CHAR)84 564 Q
+(send $TAPE $DIRECTION)84 576 Q(send -d $NEXT_STATE goto)84 600 Q(return 0)84
+612 Q(})72 624 Q/F1 10/Times-Roman@0 SF(Figure A3.)111.575 648 Q -.35(Tu)5 G
+(ring Machine Node).35 E .4 LW 77 660 72 660 DL 78 660 73 660 DL 83 660 78 660
+DL 88 660 83 660 DL 93 660 88 660 DL 98 660 93 660 DL 103 660 98 660 DL 108 660
+103 660 DL 113 660 108 660 DL 118 660 113 660 DL 123 660 118 660 DL 128 660 123
+660 DL 133 660 128 660 DL 138 660 133 660 DL 143 660 138 660 DL 148 660 143 660
+DL 153 660 148 660 DL 158 660 153 660 DL 163 660 158 660 DL 168 660 163 660 DL
+173 660 168 660 DL 178 660 173 660 DL 183 660 178 660 DL 188 660 183 660 DL 193
+660 188 660 DL 198 660 193 660 DL 203 660 198 660 DL 208 660 203 660 DL 213 660
+208 660 DL 218 660 213 660 DL 223 660 218 660 DL 228 660 223 660 DL 233 660 228
+660 DL 238 660 233 660 DL 243 660 238 660 DL 248 660 243 660 DL 253 660 248 660
+DL 258 660 253 660 DL 263 660 258 660 DL 268 660 263 660 DL 273 660 268 660 DL
+278 660 273 660 DL 283 660 278 660 DL 288 660 283 660 DL F0 6(#S)72 684 S
+(mall dictionary)90 684 Q(dictionary\(\) {)72 708 Q(set | sed -n 's/^def_//p')
+84 720 Q(return 0)336 84 Q(})324 96 Q(define\(\) {)324 120 Q(eval def_$1="$2")
+336 132 Q(return 0)336 144 Q(})324 156 Q(lookup\(\) {)324 180 Q
+(eval echo $"def_$1")336 192 Q(return 0)336 204 Q(})324 216 Q F1(Figure A4.)
+371.03 240 Q(Simple Dictionary)5 E EP
+%%Trailer
+end
+%%EOF
+
