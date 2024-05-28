@@ -1,0 +1,48 @@
+# Turing machine node
+
+XITIONS=dict_$0_NAME
+new dict $XITIONS
+
+transition() {
+    send $XITIONS define $*
+    return 0
+}
+
+destroy() {
+    send -d $XITIONS destroy $*
+    _destroy $*
+}
+
+goto() {
+    SYMBOL=$(send $TAPE Read)
+    ACTION=$(
+        send $XITIONS lookup $SYMBOL
+    )
+
+    debug $SYMBOL, $ACTION
+
+    if test -z "$ACTION"
+    then
+        send -d $MACHINE reject
+        return 0
+    fi
+
+    OUT_CHAR=$(echo $ACTION |
+        cut -f 1 -d:)
+    DIRECTION=$(echo $ACTION |
+        cut -f 2 -d:)
+    NEXT_STATE=$(echo $ACTION |
+        cut -f 3 -d:)
+
+    if test $NEXT_STATE = "accept"
+    then
+        send -d $MACHINE accept
+        return 0
+    fi
+
+    send $TAPE Write $OUT_CHAR
+    send $TAPE $DIRECTION
+
+    send -d $NEXT_STATE goto
+    return 0
+}

@@ -1,0 +1,16 @@
+mall dictionary
+
+dictionary() {
+    set | sed -n 's/^def_//p'
+    return 0
+}
+
+define() {
+    eval def_$1="$2"
+    return 0
+}
+
+lookup() {
+    eval echo $"def_$1"
+    return 0
+}

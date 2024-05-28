@@ -1,0 +1,48 @@
+# turing machine
+#   recognizes a^n b^n
+
+MACHINE=$0_NAME
+TAPE=${MACHINE}_T
+export MACHINE TAPE
+
+destroy() {
+    # debug destroy $*
+    _destroy $TAPE s1 s2 s3 s4 s5
+    exit
+}
+
+accept() {
+    echo ACCEPT
+    destroy
+}
+
+reject() {
+    echo REJECT
+    destroy
+}
+
+new tape $TAPE
+new node s1 s2 s3 s4 s5
+
+send tape load aabb
+
+# Hard-wire the nodes.
+# It'd be nicer to have this load from a file.
+
+send s1 transition a A:right:s2
+send s1 transition _ X:right:accept
+
+send s2 transition B B:right:s2
+send s2 transition a a:right:s2
+send s2 transition b B:left:s3
+
+send s3 transition B B:left:s3
+send s3 transition a a:left:s4
+send s3 transition S A:right:s5
+
+send s4 transition a a:left:s4
+send s4 transition A A:right:s1
+
+send s5 transition B B:right:s5
+send s5 transition _ X:right:accept
+

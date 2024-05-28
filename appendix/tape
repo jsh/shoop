@@ -1,0 +1,62 @@
+# Turing machine tape
+
+unset S
+typeset -i n
+typeset -i j
+
+right() {
+    let n=n+1
+    return 0
+}
+
+left() {
+    if test $n -le 1
+    then
+        echo HALT
+        return 1
+    else
+        let n=n-1
+        return 0
+    fi
+}
+
+load() {
+    S=$1
+    let n=1
+    return 0
+}
+
+print() {
+    echo $S
+    let j=n
+    while let j=j-1
+    do
+        echo -n ' '
+    done
+    echo '^'
+    return 0
+}
+
+Write() {
+    let left_neighbor=n-1
+    let right_neighbor=n+1
+    left=$(echo $S |
+        cut -c -$left_neighbor)
+    right=$(echo $S |
+        cut -c -$right_neighbor-)
+    S=$(left)$1$(right)
+    return 0
+}
+
+Read() {
+    if test $n -gt ${#S}
+    then
+        echo '_' > $O_OUT
+    else
+        echo $S | cut -c $n > $O_OUT
+    fi
+    return 0
+}
+        
+
+
