@@ -12,7 +12,7 @@ shift
 T_DIR=/tmp/ipc/$T_NAME
 T_IN=$T_DIR/in
 T_OUT=$T_DIR/out
-USAGE="usage: $(basename $0) obj msg"
+USAGE="usage: $(basename $0) [-d] obj msg"
 abort() { # print and bail
     echo $* 1>&2
     exit 1
@@ -21,9 +21,9 @@ abort() { # print and bail
 test $# -gt 0 || abort $USAGE
 
 test -d $T_DIR ||
-    abort $T_name: no such object
+    abort $T_NAME: no such object
 
-echo -e $msgtype "$*" > $T_IN
+printf "$msgtype $*" > $T_IN
 test $msgtype = "D" || cat $T_OUT
 
 exit 0
