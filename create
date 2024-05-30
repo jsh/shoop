@@ -33,16 +33,14 @@ event_loop() {
     while read pkt < $O_IN
     do
         type=${pkt%% *}
-        type=${pkt#[A-Z] }
+        msg=${pkt#[A-Z] }
 
-        if tst $type = "D"
+        if test $type = "D"
         then
-            PATH=$OPATH eval $msg
+            PATH=$O_PATH eval $msg
         else
-            PATH=$OPATH eval $msg > $O_OUT
+            PATH=$O_PATH eval $msg > $O_OUT
         fi
-        # hack around BSDI timing bug
-        sleep 1
     done
 }
 
@@ -57,7 +55,7 @@ get_obj_chain() {
         obj_root=$(
             find $i -type d -name $O_CLASS -print
         )
-        test -n $ojb_root && break
+        test -n $obj_root && break
     done
     test -z $obj_root && abort $USAGE
 
