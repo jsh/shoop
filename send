@@ -23,7 +23,7 @@ test $# -gt 0 || abort $USAGE
 test -d $T_DIR ||
     abort $T_NAME: no such object
 
-printf "$msgtype $*" > $T_IN
+echo "$msgtype $*" > $T_IN
 test $msgtype = "D" || cat $T_OUT
 
 exit 0
