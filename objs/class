@@ -39,34 +39,33 @@ self() {
 }
 
 
-# send a message
+send() {  # send a message
 
-case $1 in
-    -d) msgtype=D
-        shift ;;
-    *) msgtype=C ;;
-esac
+    case $1 in
+        -d) msgtype=D
+            shift ;;
+        *) msgtype=C ;;
+    esac
 
-T_NAME=$1
-shift
-T_DIR=/tmp/ipc/$T_NAME
-T_IN=$T_DIR/in
-T_OUT=$T_DIR/out
+    T_NAME=$1
+    shift
+    T_DIR=/tmp/ipc/$T_NAME
+    T_IN=$T_DIR/in
+    T_OUT=$T_DIR/out
 
-USAGE="usage: $(basename $0) obj msg"
-test $# -gt 0 || abort $USAGE
+    USAGE="usage: $(basename $0) obj msg"
+    test $# -gt 0 || abort $USAGE
 
-if test "$T_NAME" = "$O_NAME" ||
-    test "$T_NAME" = "self"
-then
-    PATH=$O_PATH eval $*
-    return 0
-fi
+    if test "$T_NAME" = "$O_NAME" ||
+        test "$T_NAME" = "self"
+    then
+        PATH=$O_PATH eval $*
+        return 0
+    fi
 
-test -d $T_DIR ||
-    abort $T_name: no such object
+    test -d $T_DIR ||
+        abort $T_NAME: no such object
 
-echo -e $msgtype "$*" > $T_IN
-test $msgtype = "D" || cat $T_OUT
-
-exit 0
+    echo -e $msgtype "$*" > $T_IN
+    test $msgtype = "D" || cat $T_OUT
+}
