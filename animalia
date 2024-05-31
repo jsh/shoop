@@ -1,0 +1,21 @@
+# example from paper
+
+new animal pooh bugs
+send pooh setName Pooh Bear
+send pooh setFood hunny
+send bugs setName Bugs Bunny
+send bugs setFood Carrots
+for i in pooh bugs; do
+    send $i getName
+    send $i getFood
+done
+new dog Snoopy
+new littleDog Toto
+new bigDog Lassie
+for i in Snoopy Toto Lassie; do
+    echo $i says
+    send $i bark
+    echo
+done
+destroy bugs pooh
+destroy Snoopy Toto Lassie
