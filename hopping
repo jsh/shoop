@@ -1,0 +1,13 @@
+# a simple object
+
+# method invocation
+create hop Bunny
+echo Bunny-hop:
+send Bunny hop
+send Bunny exit
+
+# handle arguments
+create hop Seuss
+echo Seuss book:
+send Seuss hop on pop
+send Seuss exit
