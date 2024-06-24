@@ -1,0 +1,19 @@
+OBJ_DIR := ~/obj/objs
+PATH := ${PWD}/appendix:${PWD}:${PATH}
+
+setup: clean .setup
+
+.setup:
+	mkdir -p ${OBJ_DIR}/{dict,node,tape}
+	ln -s ${PWD}/objs/class ${OBJ_DIR}
+	for i in dict node tape; do ln -s ${PWD}/appendix/$$i ${OBJ_DIR}/$$i/class; done
+	touch .setup
+
+turing-test: setup
+	appendix/turing-machine
+	echo SUCCESS
+
+clean:
+	rm -rf ~/obj .setup /tmp/ipc
+
+.PHONY: clean turing-test setup

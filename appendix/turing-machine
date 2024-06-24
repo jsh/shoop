@@ -24,7 +24,7 @@ reject() {
 new tape $TAPE
 new node s1 s2 s3 s4 s5
 
-send tape load aabb
+send $TAPE load aabb
 
 # Hard-wire the nodes.
 # It'd be nicer to have this load from a file.
